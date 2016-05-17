@@ -143,7 +143,7 @@ class ProcessRawStats extends Command
             $processed_stats->emails = $total_emails;
             $processed_stats->calls_inbound = $total_calls_inbound;
             $processed_stats->calls_outbound = $total_calls_outbound;
-            $processed_stats->calls_total = $total_calls
+            $processed_stats->calls_total = $total_calls;
             $processed_stats->best_email_month = $best_email_month;
             $processed_stats->best_email_quarter = $best_email_quarter;
             $processed_stats->best_call_month = $best_call_month;
