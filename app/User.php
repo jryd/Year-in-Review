@@ -31,4 +31,20 @@ class User extends Authenticatable
     {
         return $this->belongsTo('App\Role', 'role_number', 'role');
     }
+    
+    /**
+     * Raw Stats relationship
+     */
+    public function rawstats()
+    {
+        return $this->hasOne('App\RawStats');
+    }
+    
+    /**
+     * Processed Stats relationship
+     */
+    public function processedstats()
+    {
+        return $this->hasOne('App\ProcessedStats');
+    }
 }
