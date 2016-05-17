@@ -28,4 +28,12 @@ class Role extends Model
     protected $hidden = [
         //
     ];
+    
+    /**
+     * User relationship
+     */
+    public function users()
+    {
+        return $this->hasMany('App\User', 'role', 'role_number');
+    }
 }
