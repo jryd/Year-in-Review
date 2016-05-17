@@ -16,7 +16,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'xxx',
         	'last_name' => 'xxx',
         	'email' => 'xxx',
-        	'password' => Hash::make('xxx');
+        	'password' => Hash::make('xxx'),
+        	'role' => xxx,
         	]);
     }
 }
