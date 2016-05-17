@@ -33,4 +33,12 @@ class RawStats extends Model
     protected $hidden = [
         //
     ];
+    
+    /**
+     * User relationship
+     */
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }
