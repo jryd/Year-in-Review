@@ -2,17 +2,27 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Model;
 
-class User extends Authenticatable
+class RawStats extends Model
 {
+    /**
+	 * The table that the model draws from 
+	 */
+	protected $table = 'raw_stats';
+
+	/**
+	 * Using the guarded attribute as there are so many fields
+	 */
+	protected $guarded = [];
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'first_name', 'last_name', 'email', 'password',
+        //
     ];
 
     /**
@@ -21,6 +31,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        //
     ];
 }
