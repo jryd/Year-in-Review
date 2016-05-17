@@ -13,8 +13,8 @@ class RoleTableSeeder extends Seeder
     public function run()
     {
         Role::create([
-                'name' => 'CS Day Crew Team Member',
-                'role_number' => 1,
+            'name' => 'CS Day Crew Team Member',
+            'role_number' => 1,
         ]);
         
         Role::create([
