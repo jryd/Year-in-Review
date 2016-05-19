@@ -12,7 +12,7 @@ class RawStatsSeeder extends Seeder
      */
     public function run()
     {
-        RawStats::create([
+        /*RawStats::create([
         	'user_id' => xxx,
         	'emails_july' => xxx,
         	'emails_august' => xxx,
@@ -50,6 +50,6 @@ class RawStatsSeeder extends Seeder
         	'calls_outbound_april' => xxx,
         	'calls_outbound_may' => xxx,
         	'calls_outbound_june' => xxx,
-        	]);
+        	]);*/
     }
 }

@@ -24,6 +24,7 @@ class CreateProcessedStatsTable extends Migration
             $table->string('best_call_month');
             $table->string('best_call_quarter');
             $table->timestamps();
+        });
     }
 
     /**

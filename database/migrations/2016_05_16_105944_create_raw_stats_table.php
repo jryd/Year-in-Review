@@ -52,7 +52,7 @@ class CreateRawStatsTable extends Migration
             $table->integer('calls_outbound_may');
             $table->integer('calls_outbound_june');
             $table->timestamps();
-        })
+        });
     }
 
     /**

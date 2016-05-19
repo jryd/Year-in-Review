@@ -45,8 +45,9 @@
 
     <p class="login-box-msg">Sign in to get started</p>
 
-    <form action="{{ url('/auth/login') }}" method="post">
+    <form action="{{ url('/login') }}" method="post">
       <div class="form-group has-feedback">
+        {!! csrf_field() !!}
         <input type="email" class="form-control" placeholder="Email" name="email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
