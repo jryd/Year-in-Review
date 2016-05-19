@@ -60,6 +60,7 @@
           {{ session('status') }}
         </div>
       @endif
+      @include('flash::message')
         @if (count($errors) > 0)
           <div class="callout callout-danger">
             <h4>Whoops! Something doesn't look right</h4>

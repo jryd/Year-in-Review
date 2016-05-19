@@ -154,6 +154,11 @@ desired effect
 
     <!-- Main content -->
     <section class="content">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        @include('flash::message')
+      </div>
+    </div>  
 
     @yield('content')
 

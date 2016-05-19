@@ -55,6 +55,7 @@
         <a href="{{ url('/') }}"><b>Year</b> in <b>Review</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
+      @include('flash::message')
       @if (session('status'))
         <div class="callout callout-success">
           {{ session('status') }}

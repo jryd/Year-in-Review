@@ -63,10 +63,22 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        throw new Exception('Registration not possible.');
+
+        /*return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-        ]);
+        ]);*/
+    }
+
+    public function showRegistrationForm()
+    {
+        return redirect('/auth/login');
+    }
+
+    public function register()
+    {
+        return redirect('auth/login');
     }
 }
