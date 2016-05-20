@@ -11,18 +11,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="{{ asset('dist/css/AdminLTE.min.css') }}">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect.
   -->
-  <link rel="stylesheet" href="dist/css/skins/skin-yellow.min.css">
+  <link rel="stylesheet" href="{{ asset('dist/css/skins/skin-yellow.min.css') }}">
   
   <!-- Token needed for any ajax calls -->
   <meta name="_token" content="{!! csrf_token() !!}"/>
@@ -64,7 +64,7 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="{{ url('/') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>Y</b>i<b>R</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -102,7 +102,7 @@ desired effect
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="{{ url('/logout') }}" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -123,13 +123,9 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li class="home"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
         <li><a href="#"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
+        @if (Auth::user()->role_id == 10 || Auth::user()->id == 4)
+          <li class="activitylog"><a href="{{ url('/activitylog') }}"><i class="fa fa-database"></i> <span>Activity Log</span></a></li>
+        @endif
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -145,7 +141,7 @@ desired effect
         <small>What's This All About?</small>
       </h1>
       <ol class="breadcrumb">
-        <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+        @yield('breadcrumb')
       </ol>
     </section>
 
@@ -179,11 +175,11 @@ desired effect
 <!-- REQUIRED JS SCRIPTS -->
 
 <!-- jQuery 2.2.0 -->
-<script src="plugins/jQuery/jQuery-2.2.0.min.js"></script>
+<script src="{{ asset('plugins/jQuery/jQuery-2.2.0.min.js') }}"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/app.min.js"></script>
+<script src="{{ asset('dist/js/app.min.js') }}"></script>
 <!-- ChartJS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js"></script>
 <!-- Ajax Setup -->
@@ -193,7 +189,7 @@ desired effect
   });
 </script>
 <!-- Active Link JS -->
-<script src="custom/activelink.js"></script>
+<script src="{{ asset('custom/activelink.js') }}"></script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

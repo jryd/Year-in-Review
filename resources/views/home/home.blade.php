@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('breadcrumb')
+<li class="active"><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+@endsection
+
 @section('content')
 <!-- Your Page Content Here -->
 	  <div class="row">

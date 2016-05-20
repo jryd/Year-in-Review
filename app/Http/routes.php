@@ -14,3 +14,9 @@
 Route::get('/', 'HomeController@index');
 
 Route::auth();
+
+Route::get('/setnewpassword', 'SetNewPasswordController@index');
+Route::post('/setnewpassword', 'SetNewPasswordController@savePassword');
+
+Route::get('/activitylog', 'ActivityLogController@index');
+Route::get('/activitylog/{id}', 'ActivityLogController@show');
