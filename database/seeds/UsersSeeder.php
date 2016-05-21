@@ -17,6 +17,7 @@ class UsersSeeder extends Seeder
         	'last_name' => 'Administrator',
         	'email' => 'admin@admin.com',
         	'password' => Hash::make('admin'),
+            'seed_password' => 'admin',
             'password_is_admin_set' => 1,
         	'role_id' => 10,
         	]);
@@ -25,7 +26,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'Jason',
         	'last_name' => 'McHugh',
         	'email' => 'jason@trademe.co.nz',
-        	'password' => Hash::make('jasonmchugh'),
+        	'password' => Hash::make('jovial_goodall'),
+            'seed_password' => 'jovial_goodall',
             'password_is_admin_set' => 1,
         	'role_id' => 5,
         	]);
@@ -34,7 +36,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'Tegan',
         	'last_name' => 'Clay',
         	'email' => 'tegan.clay@trademe.co.nz',
-        	'password' => Hash::make('teganclay'),
+        	'password' => Hash::make('drunk_perlman'),
+            'seed_password' => 'drunk_perlman',
             'password_is_admin_set' => 1,
         	'role_id' => 6,
         	]);
@@ -43,7 +46,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'James',
         	'last_name' => 'Bannister',
         	'email' => 'james.bannister@trademe.co.nz',
-        	'password' => Hash::make('jamesbannister'),
+        	'password' => Hash::make('silly_austin'),
+            'seed_password' => 'silly_austin',
             'password_is_admin_set' => 1,
         	'role_id' => 7,
         	]);
@@ -52,7 +56,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'Phillip',
         	'last_name' => 'Onesemo',
         	'email' => 'phillip.onesemo@trademe.co.nz',
-        	'password' => Hash::make('philliponesemo'),
+        	'password' => Hash::make('prickly_poincare'),
+            'seed_password' => 'prickly_poincare',
             'password_is_admin_set' => 1,
         	'role_id' => 8,
         	]);
@@ -61,7 +66,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'Rachel',
         	'last_name' => 'Garrett',
         	'email' => 'rachel@trademe.co.nz',
-        	'password' => Hash::make('rachelgarrett'),
+        	'password' => Hash::make('ecstatic_lamarr'),
+            'seed_password' => 'ecstatic_lamarr',
             'password_is_admin_set' => 1,
         	'role_id' => 9,
         	]);
@@ -70,7 +76,8 @@ class UsersSeeder extends Seeder
         	'first_name' => 'Alicia',
         	'last_name' => 'Rameka',
         	'email' => 'alicia.rameka@trademe.co.nz',
-        	'password' => Hash::make('aliciarameka'),
+        	'password' => Hash::make('drunk_wright'),
+            'seed_password' => 'drunk_wright',
             'password_is_admin_set' => 1,
         	'role_id' => 3,
         	]);

@@ -20,3 +20,7 @@ Route::post('/setnewpassword', 'SetNewPasswordController@savePassword');
 
 Route::get('/activitylog', 'ActivityLogController@index');
 Route::get('/activitylog/{id}', 'ActivityLogController@show');
+
+Route::get('/test', function() {
+	return view('emails.account');
+});
