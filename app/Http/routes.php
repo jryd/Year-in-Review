@@ -22,5 +22,8 @@ Route::get('/activitylog', 'ActivityLogController@index');
 Route::get('/activitylog/{id}', 'ActivityLogController@show');
 
 Route::get('/test', function() {
-	return view('emails.account');
+	$first_name = 'James';
+	$email = 'blah';
+	$password = 'lolcats';
+	return view('auth.emails.account', compact('first_name', 'email', 'password'));
 });
