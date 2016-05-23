@@ -109,25 +109,3 @@
 		</div>
 	  </div>
 @endsection
-
-@section('scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/joyride/2.1.0/jquery.joyride.min.js"></script>
-<ol id="joyRideContent" style="display: none" data-joyride>
-<li data-button="Next: Account">
-<p>Welcome to Year in Review. As it's your first time here, there's just a quick tour to show you where everything is (although it's pretty self-explantory).</p>
-</li>
-<li data-id="accountDropDown" data-button="Next: My Stats">
-<p>Up here is where you can go to log out if you need to.</p>
-</li>
-<li data-id="myStats" data-button="Close">
-<p>This is where your personal stats are, they'll show you some cool insights as to how you contributed to CS.</p>
-</li>
-</ol>
-<script>
-$(document).ready(function() {
-  $("#joyRideContent").joyride({
-    'tipLocation': 'bottom',
-  });
-});
-</script>
-@endsection
