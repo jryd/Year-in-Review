@@ -124,7 +124,7 @@
 </li>
 </ol>
 <script>
-$(window).load(function() {
+$(document).ready(function() {
   $("#joyRideContent").joyride({
     'tipLocation': 'bottom',
   });
