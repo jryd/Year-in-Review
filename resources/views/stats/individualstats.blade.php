@@ -2,7 +2,7 @@
 
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
-<li class="active"><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> My Stats</a></li>
+<li class="active"><i class="fa fa-line-chart"></i> My Stats</a></li>
 @endsection
 
 @section('content')
