@@ -26,9 +26,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   
   <!-- Token needed for any ajax calls -->
   <meta name="_token" content="{!! csrf_token() !!}"/>
-  
-  <!-- Joyride CSS -->
-  <link rel=" stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/joyride/2.1.0/joyride.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -83,7 +80,7 @@ desired effect
           <!-- User Account Menu -->
           <li class="dropdown user user-menu">
             <!-- Menu Toggle Button -->
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="accountDropDown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
               <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
@@ -122,7 +119,7 @@ desired effect
         <li class="header">Menu</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="home"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
-        <li><a href="#" id="myStats"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
+        <li><a href="#"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
         @if (Auth::user()->role_id == 10 || Auth::user()->id == 4)
           <li class="activitylog"><a href="{{ url('/activitylog') }}"><i class="fa fa-database"></i> <span>Activity Log</span></a></li>
         @endif
@@ -190,8 +187,6 @@ desired effect
 </script>
 <!-- Active Link JS -->
 <script src="{{ asset('custom/activelink.js') }}"></script>
-<!-- Page specific Scripts -->
-@yield('scripts')
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
