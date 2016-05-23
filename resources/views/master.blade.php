@@ -27,8 +27,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Token needed for any ajax calls -->
   <meta name="_token" content="{!! csrf_token() !!}"/>
   
-  <!-- Timeline CSS -->
-  <!-- <link rel="stylesheet" href="custom/timeline.css"> -->
+  <!-- Joyride CSS -->
+  <link rel=" stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/joyride/2.1.0/joyride.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -190,6 +190,8 @@ desired effect
 </script>
 <!-- Active Link JS -->
 <script src="{{ asset('custom/activelink.js') }}"></script>
+<!-- Page specific Scripts -->
+@yield('scripts')
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
