@@ -23,6 +23,10 @@ class CreateProcessedStatsTable extends Migration
             $table->string('best_email_quarter');
             $table->string('best_call_month');
             $table->string('best_call_quarter');
+            $table->string('best_output_month');
+            $table->string('best_output_quarter');
+            $table->string('best_quality_month');
+            $table->string('best_quality_quarter');
             $table->timestamps();
         });
     }
