@@ -95,6 +95,30 @@ class ProcessRawStats extends Command
 			$calls_october_total = $calls_inbound_october + $calls_outbound_october;
 			$calls_november_total = $calls_inbound_november + $calls_outbound_november;
 			$calls_december_total = $calls_inbound_december + $calls_outbound_december;
+			$output_july = $raw_stats->output_july;
+            $output_august = $raw_stats->output_august;
+            $output_september = $raw_stats->output_september;
+            $output_october = $raw_stats->output_october;
+            $output_november = $raw_stats->output_november;
+            $output_december = $raw_stats->output_december;
+            $output_january = $raw_stats->output_january;
+            $output_february = $raw_stats->output_february;
+            $output_march = $raw_stats->output_march;
+            $output_april = $raw_stats->output_april;
+            $output_may = $raw_stats->output_may;
+            $output_june = $raw_stats->output_june;
+            $quality_july = $raw_stats->quality_july;
+            $quality_august = $raw_stats->quality_august;
+            $quality_september = $raw_stats->quality_september;
+            $quality_october = $raw_stats->quality_october;
+            $quality_november = $raw_stats->quality_november;
+            $quality_december = $raw_stats->quality_december;
+            $quality_january = $raw_stats->quality_january;
+            $quality_february = $raw_stats->quality_february;
+            $quality_march = $raw_stats->quality_march;
+            $quality_april = $raw_stats->quality_april;
+            $quality_may = $raw_stats->quality_may;
+            $quality_june = $raw_stats->quality_june;
             
             //Total emails
             $total_emails = $emails_july + $emails_august + $emails_september + $emails_october + $emails_november + $emails_december + $emails_january + $emails_february + $emails_march + $emails_april + $emails_may + $emails_june;
@@ -137,7 +161,37 @@ class ProcessRawStats extends Command
 			$best_call_quarter_array = array('Quarter 1' => $calls_q1, 'Quarter 2' => $calls_q2, 'Quarter 3' => $calls_q3, 'Quarter 4' => $calls_q4);
 			arsort($best_call_quarter_array);
 			$best_call_quarter = key($best_call_quarter_array);
-
+			
+			//Month they had the highest output
+			$best_output_month_array = array('January' => $output_january, 'February' => $output_february, 'March' => $output_march, 'April' => $output_april, 'May' => $output_may, 'June' => $output_june, 'July' => $output_july, 'August' => $output_august, 'September' => $output_september, 'October' => $output_october, 'November' => $output_november, 'December' => $output_december);
+			arsort($best_output_month_array);
+			$best_output_month = key($best_output_month_array);
+			
+			//Quarter they had the highest output
+			$output_q1 = $output_july + $output_august + $output_september;
+            $output_q2 = $output_october + $output_november + $output_december;
+            $output_q3 = $output_january + $output_february + $output_march;
+            $output_q4 = $output_april + $output_may + $output_june;
+            
+            $best_output_quarter_array = array('Quarter 1' => $output_q1, 'Quarter 2' => $output_q2, 'Quarter 3' => $output_q3, 'Quarter 4' => $output_q4);
+            arsort($best_output_quarter_array);
+            $best_output_quarter = key($best_output_quarter_array);
+            
+			//Month they had the highest quality
+			$best_quality_month_array = array('January' => $quality_january, 'February' => $quality_february, 'March' => $quality_march, 'April' => $quality_april, 'May' => $quality_may, 'June' => $quality_june, 'July' => $quality_july, 'August' => $quality_august, 'September' => $quality_september, 'October' => $quality_october, 'November' => $quality_november, 'December' => $quality_december);
+			arsort($best_quality_month_array);
+			$best_quality_month = key($best_quality_month_array);
+			
+			//Quarter they had the highest quality
+            $quality_q1 = $quality_july + $quality_august + $quality_september;
+            $quality_q2 = $quality_october + $quality_november + $quality_december;
+            $quality_q3 = $quality_january + $quality_february + $quality_march;
+            $quality_q4 = $quality_april + $quality_may + $quality_june;
+            
+            $best_quality_quarter_array = array('Quarter 1' => $quality_q1, 'Quarter 2' => $quality_q2, 'Quarter 3' => $quality_q3, 'Quarter 4' => $quality_q4);
+            arsort($best_quality_quarter_array);
+            $best_quality_quarter = key($best_quality_quarter_array);
+            
             //Insert all of this in to the processed stats table
             $processed_stats = new ProcessedStats;
             $processed_stats->emails = $total_emails;
@@ -148,6 +202,10 @@ class ProcessRawStats extends Command
             $processed_stats->best_email_quarter = $best_email_quarter;
             $processed_stats->best_call_month = $best_call_month;
             $processed_stats->best_call_quarter = $best_call_quarter;
+            $processed_stats->best_output_month = $best_output_month;
+            $processed_stats->best_output_quarter = $best_output_quarter;
+            $processed_stats->best_quality_month = $best_quality_month;
+            $processed_stats->best_quality_quarter = $best_quality_quarter;
             $processed_stats->save();
         }
 
