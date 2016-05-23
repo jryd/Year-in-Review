@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration
             $table->string('seed_password');
             $table->integer('password_is_admin_set');
             $table->integer('role_id');
-            $table->integer('tour');
             $table->rememberToken();
             $table->timestamps();
         });
