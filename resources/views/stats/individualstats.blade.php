@@ -25,7 +25,7 @@
                 <!-- /.box-body -->
           </div>
 		</div>
-		<div class="col-md-4>
+		<div class="col-md-4">
 			<!-- Info Boxes Style 2 -->
               <div class="info-box bg-yellow">
                 <span class="info-box-icon"><i class="ion ion-ios-email-outline"></i></span>
