@@ -54,7 +54,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-yellow sidebar-mini">
+<body @if(Auth::user()->sidebar_min == 0) class="hold-transition skin-yellow sidebar-mini" @else class="hold-transition skin-yellow sidebar-mini sidebar-collapse" @endif>
 <div class="wrapper">
 
   <!-- Main Header -->
@@ -71,7 +71,7 @@ desired effect
     <!-- Header Navbar -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" id="sidebarButton">
         <span class="sr-only">Toggle navigation</span>
       </a>
       <!-- Navbar Right Menu -->
@@ -187,6 +187,23 @@ desired effect
 </script>
 <!-- Active Link JS -->
 <script src="{{ asset('custom/activelink.js') }}"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#sidebarButton').on('click', function() {
+      $.ajax({
+        url: "{{ url('/sidebar/changestate') }}",
+        method: "POST", // Or whatever you're using (GET, PUT, etc.)
+        data: {'member':{{ Auth::user()->id }}}, // Let jQuery handle packing the data for you
+        success: function(response) {
+             console.log('Sidebar data sent successfully');
+        },
+        error: function(xhr, textStatus, errorThrown) {
+            console.log('There was an error.');
+        }
+      });
+    });
+  });
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the

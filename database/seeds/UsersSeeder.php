@@ -20,6 +20,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'admin',
             'password_is_admin_set' => 1,
         	'role_id' => 10,
+            'sidebar_min' => 0,
         	]);
         	
         User::create([
@@ -30,6 +31,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'jovial_goodall',
             'password_is_admin_set' => 1,
         	'role_id' => 5,
+            'sidebar_min' => 0,
         	]);
         	
         User::create([
@@ -40,6 +42,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'drunk_perlman',
             'password_is_admin_set' => 1,
         	'role_id' => 6,
+            'sidebar_min' => 0,
         	]);
         	
         User::create([
@@ -50,6 +53,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'silly_austin',
             'password_is_admin_set' => 1,
         	'role_id' => 7,
+            'sidebar_min' => 0,
         	]);
         	
         User::create([
@@ -60,6 +64,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'prickly_poincare',
             'password_is_admin_set' => 1,
         	'role_id' => 8,
+            'sidebar_min' => 0,
         	]);
         	
         User::create([
@@ -70,6 +75,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'ecstatic_lamarr',
             'password_is_admin_set' => 1,
         	'role_id' => 9,
+            'sidebar_min' => 0,
         	]);
         	
         User::create([
@@ -80,6 +86,7 @@ class UsersSeeder extends Seeder
             'seed_password' => 'drunk_wright',
             'password_is_admin_set' => 1,
         	'role_id' => 3,
+            'sidebar_min' => 0,
         	]);
     }
 }

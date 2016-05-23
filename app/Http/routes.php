@@ -25,6 +25,22 @@ Route::get('/mystats', function() {
     return view('stats.individualstats');
 });
 
+Route::post('/sidebar/changestate', function() {
+	$user = \App\User::find(\Auth::user()->id);
+	if ($user->sidebar_min == 0)
+	{
+		$user->sidebar_min = 1;
+		$user->save();
+		return "success";
+	}
+	else
+	{
+		$user->sidebar_min = 0;
+		$user->save();
+		return "success";
+	}
+});
+
 Route::get('/test', function() {
 	$first_name = 'James';
 	$email = 'blah';
