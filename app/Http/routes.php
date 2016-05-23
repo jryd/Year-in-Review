@@ -21,6 +21,10 @@ Route::post('/setnewpassword', 'SetNewPasswordController@savePassword');
 Route::get('/activitylog', 'ActivityLogController@index');
 Route::get('/activitylog/{id}', 'ActivityLogController@show');
 
+Route::get('/mystats', function() {
+    return view('stats.individualstats');
+});
+
 Route::get('/test', function() {
 	$first_name = 'James';
 	$email = 'blah';
