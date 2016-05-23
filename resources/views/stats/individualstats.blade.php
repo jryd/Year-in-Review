@@ -33,8 +33,9 @@
                   <span class="info-box-text">Emails</span>
                   <span class="info-box-number">x,xxx</span>
                 <!-- /.info-box-content -->
-              </div>
+                </div>
               <!-- /.info-box -->
+              </div>
     		  
               <div class="info-box bg-green">
                 <span class="info-box-icon"><i class="ion ion-ios-telephone-outline"></i></span>
@@ -48,7 +49,6 @@
     		  
               <div class="info-box bg-red">
                 <span class="info-box-icon"><i class="ion ion-ios-cloud-upload-outline"></i></span>
-    
                 <div class="info-box-content">
                   <span class="info-box-text">Development</span>
                   <span class="info-box-number">xxx hours</span>
