@@ -42,6 +42,7 @@ class ProcessRawStats extends Command
     {
         //Grab all the raw stats records
         $all_raw_stats = RawStats::all();
+        $bar = $this->output->createProgressBar(count($all_raw_stats));
 
         //Loop through them all and generate the processed stats
         foreach ($all_raw_stats as $raw_stats)
@@ -207,8 +208,12 @@ class ProcessRawStats extends Command
             $processed_stats->best_quality_month = $best_quality_month;
             $processed_stats->best_quality_quarter = $best_quality_quarter;
             $processed_stats->save();
+            
+            //Advance the progress bar
+            $bar->advance();
         }
-
-        $this->info('It works!');
+        
+        $bar->finish();
+        $this->info('Completed!');
     }
 }
