@@ -119,7 +119,7 @@ desired effect
         <li class="header">Menu</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="home"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
-        <li><a href="#"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
+        <li><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
         @if (Auth::user()->role_id == 10 || Auth::user()->id == 4)
           <li class="activitylog"><a href="{{ url('/activitylog') }}"><i class="fa fa-database"></i> <span>Activity Log</span></a></li>
         @endif
