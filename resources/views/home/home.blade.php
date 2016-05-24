@@ -30,9 +30,9 @@
 						<h3 class="timeline-header">Emails</h3>
 
 						<div class="timeline-body">
-							Over the course of the last year, we have received <b>{{ number_format($emails) }}</b> emails - of which <b>xx%</b> were personally dealt with by us here in Core CS.
+							Over the course of the last year, we have received <b>{{ number_format($emails) }}</b> emails - of which <b>{{ $cs_email_avg }}%</b> were personally dealt with by us here in Core CS.
 							<br/><br/>
-							With each person answering <b>xxx</b> on average.
+							With each person answering <b>{{ $emails_pp_avg }}</b> on average.
 						</div>
 
 					</div>
@@ -50,7 +50,7 @@
 						<div class="timeline-body">
 							Over the course of the last year, we have received <b>{{ number_format($calls) }}</b> calls here in to Core CS.
 							<br/><br/>
-							With each person answering <b>xxx</b> on average.
+							With each person answering <b>{{ $calls_pp_avg }}</b> on average.
 						</div>
 
 					</div>
