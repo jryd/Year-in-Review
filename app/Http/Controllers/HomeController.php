@@ -30,7 +30,7 @@ class HomeController extends Controller
         $stats = CumulativeStats::find(1);
         $emails = $stats->emails;
         $cs_email_avg = $stats->cs_email_average;
-        $emails_pp_avg = $stats->emails_per_person_average;
+        $emails_pp_avg = $stats->email_per_person_average;
         $calls = $stats->calls;
         $calls_pp_avg = $stats->calls_per_person_average;
         $development = $stats->development;
