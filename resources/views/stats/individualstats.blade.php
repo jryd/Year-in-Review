@@ -11,7 +11,7 @@
 		<div class="col-md-8">
 			<div class="box box-success">
         <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
+          <h3 class="box-title">Emails and Calls over the year</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
@@ -21,7 +21,7 @@
         </div>
         <!-- /.box-header -->
         <div class="box-body">
-          The body of the box
+          Emails month by month and calls month by month
         </div>
         <!-- /.box-body -->
       </div>
