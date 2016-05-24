@@ -16,6 +16,9 @@ class CumulativeStatsSeeder extends Seeder
             'calls' => 25000,
             'development' => 2500,
             'extra_tasks' => 4160,
+            'cs_email_average' => 87.41,
+            'email_per_person_average' => 2500,
+            'call_per_person_average' => 750,
         ]);
     }
 }
