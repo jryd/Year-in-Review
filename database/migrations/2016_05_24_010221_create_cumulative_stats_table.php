@@ -12,7 +12,14 @@ class CreateCumulativeStatsTable extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('cumulative_stats', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('emails');
+            $table->integer('calls');
+            $table->integer('development');
+            $table->integer('extra_tasks');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +29,6 @@ class CreateCumulativeStatsTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('cumulative_stats');
     }
 }
