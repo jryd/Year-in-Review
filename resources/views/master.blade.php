@@ -190,17 +190,24 @@ desired effect
 <script type="text/javascript">
   $(document).ready(function(){
     $('#sidebarButton').on('click', function() {
-      $.ajax({
-        url: "{{ url('/sidebar/changestate') }}",
-        method: "POST", // Or whatever you're using (GET, PUT, etc.)
-        data: {'member':{{ Auth::user()->id }}}, // Let jQuery handle packing the data for you
-        success: function(response) {
-             console.log('Sidebar data sent successfully');
-        },
-        error: function(xhr, textStatus, errorThrown) {
-            console.log('There was an error.');
+        if ($(window).width() > 767)
+        {
+          $.ajax({
+            url: "{{ url('/sidebar/changestate') }}",
+            method: "POST", // Or whatever you're using (GET, PUT, etc.)
+            data: {'member':{{ Auth::user()->id }}}, // Let jQuery handle packing the data for you
+            success: function(response) {
+                 console.log('Sidebar data sent successfully');
+            },
+            error: function(xhr, textStatus, errorThrown) {
+                console.log('There was an error.');
+            }
+          });
         }
-      });
+        else
+        {
+            console.log('Viewport not big enough for change. Ajax call not made.');
+        }
     });
   });
 </script>
