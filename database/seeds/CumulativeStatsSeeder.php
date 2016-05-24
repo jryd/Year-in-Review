@@ -11,6 +11,11 @@ class CumulativeStatsSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\CumulativeStats::create([
+            'emails' => 100000,
+            'calls' => 25000,
+            'development' => 2500,
+            'extra_tasks' => 4160,
+        ]);
     }
 }
