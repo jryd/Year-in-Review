@@ -30,7 +30,7 @@
 						<h3 class="timeline-header">Emails</h3>
 
 						<div class="timeline-body">
-							Over the course of the last year, we have received <b>xxx,xxx</b> emails - of which <b>xx%</b> were personally dealt with by us here in Core CS.
+							Over the course of the last year, we have received <b>{{ $emails }}</b> emails - of which <b>xx%</b> were personally dealt with by us here in Core CS.
 							<br/><br/>
 							With each person answering <b>xxx</b> on average.
 						</div>
@@ -48,7 +48,7 @@
 						<h3 class="timeline-header">Calls</h3>
 
 						<div class="timeline-body">
-							Over the course of the last year, we have received <b>xxx,xxx</b> calls here in to Core CS.
+							Over the course of the last year, we have received <b>{{ $calls }}</b> calls here in to Core CS.
 							<br/><br/>
 							With each person answering <b>xxx</b> on average.
 						</div>
@@ -68,7 +68,7 @@
 						<div class="timeline-body">
 							Hiring and growing great people is part of what we do here at Trade Me.
 							<br/><br/>
-							Over the last year we have spent a total of <b>xxx</b> hours supporting your development (WIPs, training, courses etc) and extra tasks (TMCS, Call Backs, STA etc).
+							Over the last year we have spent a total of <b>{{ $development + $extra_tasks }}</b> hours supporting your development (WIPs, training, courses etc) and extra tasks (TMCS, Call Backs, STA etc).
 						</div>
 
 					</div>
@@ -88,7 +88,7 @@
 						</div>
 						
 						<div class="timeline-footer">
-							<a class="btn btn-primary btn-xs">Have a look at what you did</a>
+							<a class="btn btn-primary btn-xs" href="{{ url('/mystats') }}">Have a look at what you did</a>
 						</div>
 
 					</div>
