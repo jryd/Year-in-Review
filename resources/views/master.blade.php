@@ -133,7 +133,7 @@ desired effect
         <li class="home"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
         <li class="mystats"><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
         <li class="teamstats"><a href="{{ url('teamstats') }}"><i class="fa fa-users"></i> <span>Team Stats</span></a></li>
-        @if (Auth::user()->role_id == 10 || Auth::user()->id == 4)
+        @if (Auth::user()->role_id == 10 || Auth::user()->role_id == 7)
           <li class="activitylog"><a href="{{ url('/activitylog') }}"><i class="fa fa-database"></i> <span>Activity Log</span></a></li>
         @endif
       </ul>
