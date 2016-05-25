@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('title')
+{{ $users->first_name }}'s Activity
+@endsection
+
+@section('pagetitle')
+{{ $users->first_name }}'s Activity
+<small>Where have they been and what have they done?</small>
+@endsection
+
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 <li><a href="{{ url('/activitylog') }}">Activity Log</a></li>
