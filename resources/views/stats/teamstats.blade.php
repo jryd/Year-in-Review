@@ -184,10 +184,10 @@ Team Stats
       datasets: [
           {
               label: 'Emails',
-              backgroundColor : 'rgba(244, 165, 41, 0.3)',
-                borderColor : '#f56954',
-                pointBackgroundColor : '#da8c10',
-                pointBorderColor : '#c27c0e',
+              backgroundColor : 'rgba(243, 156, 18, 0.3)',
+                borderColor : '#da8c10',
+                pointBackgroundColor : '#F39C12',
+                pointBorderColor : '#da8c10',
               data: [598, 603, 761, 870, 1227, 860, 1086, 1107, 605, 800, 600, 600]
           },
           {
