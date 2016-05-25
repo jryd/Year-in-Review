@@ -43,6 +43,8 @@ class NotifyAccounts extends Command
         if (App::environment('local'))
         {
             $users = User::where('email', '=', 'james.bannister@trademe.co.nz')->get();
+            $bar = $this->output->createProgressBar(count($users));
+            
             foreach ($users as $user)
             {
                 $data = ['first_name' => $user->first_name, 'email' => $user->email, 'password' => $user->seed_password];
@@ -50,9 +52,11 @@ class NotifyAccounts extends Command
                     $message->to($user->email, $user->first_name . ' ' . $user->last_name);
                     $message->subject('Welcome to Year in Review');
                 });
+                $bar->advance();
             } 
-
-            $this->info('You, Sir, have been notified of your account as we are in a local environment.');
+            
+            $bar->finish();
+            $this->info(' You, Sir, have been notified of your account as we are in a local environment.');
         }
         else
         {
