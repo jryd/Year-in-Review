@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('title')
+Activity Log
+@endsection
+
+@section('pagetitle')
+Activity log
+<small>What's everyone been up to?</small>
+@endsection
+
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 <li class="active">Activity Log</li>
