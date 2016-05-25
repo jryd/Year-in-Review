@@ -171,7 +171,7 @@
     ]
   };
   
-  var emailsandcallsByMonth = {
+  var emailsandcallsByMonthData = {
       labels: ['July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June'],
       datasets: [
           {
