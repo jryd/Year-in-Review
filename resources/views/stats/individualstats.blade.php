@@ -184,7 +184,7 @@ Your stats
       datasets: [
           {
               label: 'Emails',
-              backgroundColor : 'rgba(243, 156, 18, 0.5)',
+              backgroundColor : 'rgba(243, 156, 18, 0.3)',
                 borderColor : '#da8c10',
                 pointBackgroundColor : '#F39C12',
                 pointBorderColor : '#da8c10',
@@ -192,7 +192,7 @@ Your stats
           },
           {
               label: 'Calls',
-              backgroundColor : 'rgba(0, 166, 90, 0.5)',
+              backgroundColor : 'rgba(0, 166, 90, 0.3)',
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
