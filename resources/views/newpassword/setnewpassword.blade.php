@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('title')
+New password
+@endsection
+
+@section('pagetitle')
+Set a new password
+<small>'Cos the current one is totally random</small>
+@endsection
+
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 <li class="active">Set new password</li>
