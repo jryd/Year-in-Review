@@ -57,6 +57,7 @@ class NotifyAccounts extends Command
         else
         {
             $users = User::all();
+            $bar = $this->output->createProgressBar(count($users));
 
             foreach ($users as $user)
             {
@@ -65,8 +66,10 @@ class NotifyAccounts extends Command
                     $message->to($user->email, $user->first_name . ' ' . $user->last_name);
                     $message->subject('Welcome to Year in Review');
                 });
+                $bar->advance();
             } 
-            $this->info('All accounts have been notified.');
+            $bar->finish();
+            $this->info(' All accounts have been notified.');
         }
     }
 }
