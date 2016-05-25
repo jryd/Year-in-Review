@@ -22,7 +22,6 @@
         <!-- /.box-header -->
         <div class="box-body">
           <canvas id="emailsandcallsByMonth"></canvas>
-          Emails month by month and calls month by month
         </div>
         <!-- /.box-body -->
       </div>
@@ -176,18 +175,18 @@
       datasets: [
           {
               label: 'Emails',
-              fillColor : 'rgba(25, 198, 240, 0.3)',
-                            strokeColor : '#00C0EF',
-                            pointColor : '#00acd7',
-                            pointStrokeColor : '#0099bf',
+              backgroundColor : 'rgba(25, 198, 240, 0.3)',
+                borderColor : '#00C0EF',
+                pointBackgroundColor : '#00acd7',
+                pointBorderColor : '#0099bf',
               data: [598, 603, 761, 870, 1227, 860, 1086, 1107, 605, 800, 600, 600]
           },
           {
               label: 'Calls',
-              fillColor : 'rgba(25, 174, 106, 0.3)',
-                            strokeColor : '#00A65A',
-                            pointColor : '#009551',
-                            pointStrokeColor : '#008448',
+              backgroundColor : 'rgba(25, 174, 106, 0.3)',
+                borderColor : '#00A65A',
+                pointBackgroundColor : '#009551',
+                pointBorderColor : '#008448',
               data: [309, 192, 131, 127, 346, 285, 379, 322, 130, 204, 170, 170]
           }
       ]
