@@ -20,9 +20,20 @@ class StatsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function mystats()
     {
         Activity::log('Page View: My Stats');
         return view('stats.individualstats');
+    }
+    
+    /**
+     * Show the team stats dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function teamstats()
+    {
+        Activity::log('Page View: Team Stats');
+        return view('stats.teamstats');
     }
 }
