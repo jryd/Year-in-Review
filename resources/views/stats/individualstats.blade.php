@@ -215,7 +215,7 @@
   
   new Chart(emailsandcallsByMonth, {
       type: 'line',
-      data: emailandcallsByMonthData,
+      data: emailsandcallsByMonthData,
   });
 
 </script>
