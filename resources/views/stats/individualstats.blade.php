@@ -21,6 +21,7 @@
         </div>
         <!-- /.box-header -->
         <div class="box-body">
+          <canvas id="emailsandcallsByMonth"></canvas>
           Emails month by month and calls month by month
         </div>
         <!-- /.box-body -->
@@ -169,10 +170,33 @@
       }
     ]
   };
+  
+  var emailsandcallsByMonth = {
+      labels: ['July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June'],
+      datasets: [
+          {
+              label: 'Emails',
+              fillColor : 'rgba(25, 198, 240, 0.3)',
+                            strokeColor : '#00C0EF',
+                            pointColor : '#00acd7',
+                            pointStrokeColor : '#0099bf',
+              data: [598, 603, 761, 870, 1227, 860, 1086, 1107, 605, 800, 600, 600]
+          },
+          {
+              label: 'Calls',
+              fillColor : 'rgba(25, 174, 106, 0.3)',
+                            strokeColor : '#00A65A',
+                            pointColor : '#009551',
+                            pointStrokeColor : '#008448',
+              data: [309, 192, 131, 127, 346, 285, 379, 322, 130, 204, 170, 170]
+          }
+      ]
+  };
 
   var emailsvscalls = document.querySelector('#emailsvscalls').getContext('2d');
   var emailsvsallemails = document.querySelector('#emailsvsallemails').getContext('2d');
   var callsvsallcalls = document.querySelector('#callsvsallcalls').getContext('2d');
+  var emailsandcallsByMonth = document.querySelector('#emailsandcallsByMonth').getContext('2d');
 
   new Chart(emailsvscalls, {
     type: 'doughnut',
@@ -187,6 +211,11 @@
   new Chart(callsvsallcalls, {
     type: 'doughnut',
     data: callsvsallcallsData,
+  });
+  
+  new Chart(emailsandcallsByMonth, {
+      type: 'line',
+      data: emailandcallsByMonthData,
   });
 
 </script>
