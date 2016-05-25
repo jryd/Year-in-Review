@@ -137,7 +137,7 @@ desired effect
       <h1>
         <!-- Welcome
         <small>What's This All About?</small> -->
-        @yeild('pagetitle')
+        @yield('pagetitle')
       </h1>
       <ol class="breadcrumb">
         @yield('breadcrumb')
