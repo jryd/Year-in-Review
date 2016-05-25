@@ -192,10 +192,10 @@ Team Stats
           },
           {
               label: 'Calls',
-              backgroundColor : 'rgba(25, 174, 106, 0.3)',
-                borderColor : '#00A65A',
-                pointBackgroundColor : '#009551',
-                pointBorderColor : '#008448',
+              backgroundColor : 'rgba(0, 166, 90, 0.3)',
+                borderColor : '#008548',
+                pointBackgroundColor : '#00A65A',
+                pointBorderColor : '#008548',
               data: [309, 192, 131, 127, 346, 285, 379, 322, 130, 204, 170, 170]
           }
       ]
