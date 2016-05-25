@@ -16,29 +16,15 @@ if(firstPath == ""){ //if path is blank (home), make it active
   var dash = document.getElementsByClassName('home')[0];
   dash.className      += " " + "active";
 }
-else if(firstPath == "character"){ //if path is character, make it active
-  var char             = document.getElementsByClassName('char')[0];
+else if(firstPath == "mystats"){ //if path is character, make it active
+  var char             = document.getElementsByClassName('mystats')[0];
   char.className      += " " + "active";
 }
-else if(secondPath == "application"){ //if second path is application, make it active
-  var apps             = document.getElementsByClassName('apps')[0];
-  apps.className      += " " + "active";
-}
-else if(secondPath == "character"){ //if second path is character, make administration active and make characters active too
-  var char             = document.getElementsByClassName('admin')[0];
-  var adminChar        = document.getElementsByClassName('adminChar')[0];
+else if(firstPath == "teamstats"){ //if path is character, make it active
+  var char             = document.getElementsByClassName('teamstats')[0];
   char.className      += " " + "active";
-  adminChar.className += " " + "active";
 }
-else if(secondPath == "user"){ //if second path is user, make administration active and make lookup active too
-  var user             = document.getElementsByClassName('admin')[0];
-  var lookup           = document.getElementsByClassName('lookup')[0];
-  user.className      += " " + "active";
-  lookup.className    += " " + "active";
-}
-else if(firstPath == "activitylog"){ //if path is activitylog, make it active
-  var log              = document.getElementsByClassName('logs')[0];
-  var userLogs         = document.getElementsByClassName('userLogs')[0];
-  log.className       += " " + "active";
-  userLogs.className  += " " + "active";
+else if(firstPath == "activitylog"){ //if path is character, make it active
+  var char             = document.getElementsByClassName('activitylog')[0];
+  char.className      += " " + "active";
 }
