@@ -214,6 +214,6 @@ class ProcessRawStats extends Command
         }
         
         $bar->finish();
-        $this->info('Completed!');
+        $this->info(' Completed!');
     }
 }
