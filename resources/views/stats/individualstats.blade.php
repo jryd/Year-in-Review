@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('title')
+My Stats
+@endsection
+
+@section('pagetitle')
+Your stats
+<small>What did you do in playing your part?</small>
+@endsection
+
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 <li class="active"><i class="fa fa-line-chart"></i> My Stats</a></li>
