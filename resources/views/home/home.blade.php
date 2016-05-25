@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('title')
+Home
+@endsection
+
+@section('pagetitle')
+Home
+<small>It's where the heart is</small>
+@endsection
+
 @section('breadcrumb')
 <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 @endsection
