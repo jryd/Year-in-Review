@@ -7,7 +7,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>W00t | Year in Review</title>
+  <title>@yield('title') | Year in Review</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
@@ -134,8 +134,9 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Welcome
-        <small>What's This All About?</small>
+        <!-- Welcome
+        <small>What's This All About?</small> -->
+        @yeild('pagetitle')
       </h1>
       <ol class="breadcrumb">
         @yield('breadcrumb')
