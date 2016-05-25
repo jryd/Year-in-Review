@@ -1,5 +1,14 @@
 @extends('master')
 
+@section('title')
+Team Stats
+@endsection
+
+@section('pagetitle')
+Team Stats
+<small>How did your team perform?</small>
+@endsection
+
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 <li class="active"><i class="fa fa-users"></i> Team Stats</a></li>
