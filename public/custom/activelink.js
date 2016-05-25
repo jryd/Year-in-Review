@@ -16,15 +16,19 @@ if(firstPath == ""){ //if path is blank (home), make it active
   var dash = document.getElementsByClassName('home')[0];
   dash.className      += " " + "active";
 }
-else if(firstPath == "mystats"){ //if path is character, make it active
+else if(firstPath == "mystats"){ //if path is my stats, make it active
   var char             = document.getElementsByClassName('mystats')[0];
   char.className      += " " + "active";
 }
-else if(firstPath == "teamstats"){ //if path is character, make it active
+else if(firstPath == "teamstats"){ //if path is team stats, make it active
   var char             = document.getElementsByClassName('teamstats')[0];
   char.className      += " " + "active";
 }
-else if(firstPath == "activitylog"){ //if path is character, make it active
+else if(firstPath == "activitylog"){ //if path is activity log, make it active
+  var char             = document.getElementsByClassName('activitylog')[0];
+  char.className      += " " + "active";
+}
+else if(secondPath == "activitylog"){ //if path is activity log, make it active
   var char             = document.getElementsByClassName('activitylog')[0];
   char.className      += " " + "active";
 }
