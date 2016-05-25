@@ -21,9 +21,7 @@ Route::post('/setnewpassword', 'SetNewPasswordController@savePassword');
 Route::get('/activitylog', 'ActivityLogController@index');
 Route::get('/activitylog/{id}', 'ActivityLogController@show');
 
-Route::get('/mystats', function() {
-    return view('stats.individualstats');
-});
+Route::get('/mystats', 'StatsController@index');
 
 Route::post('/sidebar/changestate', function() {
 	$user = \App\User::find(\Auth::user()->id);
