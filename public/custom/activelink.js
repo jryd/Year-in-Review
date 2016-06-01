@@ -32,3 +32,7 @@ else if(secondPath == "activitylog"){ //if path is activity log, make it active
   var char             = document.getElementsByClassName('activitylog')[0];
   char.className      += " " + "active";
 }
+else if(firstPath == "allteamstats"){ //if path is activity log, make it active
+  var char             = document.getElementsByClassName('allteamstats')[0];
+  char.className      += " " + "active";
+}

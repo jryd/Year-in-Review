@@ -48,7 +48,7 @@ class NotifyAccounts extends Command
             foreach ($users as $user)
             {
                 $data = ['first_name' => $user->first_name, 'email' => $user->email, 'password' => $user->seed_password];
-                Mail::send('auth.emails.account', $data, function($message) use ($user) {
+                Mail::send('emails.manager_account', $data, function($message) use ($user) {
                     $message->to($user->email, $user->first_name . ' ' . $user->last_name);
                     $message->subject('Welcome to Year in Review');
                 });
@@ -66,10 +66,21 @@ class NotifyAccounts extends Command
             foreach ($users as $user)
             {
                 $data = ['first_name' => $user->first_name, 'email' => $user->email, 'password' => $user->seed_password];
-                Mail::send('auth.emails.account', $data, function($message) use ($user) {
-                    $message->to($user->email, $user->first_name . ' ' . $user->last_name);
-                    $message->subject('Welcome to Year in Review');
-                });
+                if ($user->role_id < 5)
+                {
+                    Mail::send('emails.csr_account', $data, function($message) use ($user) {
+                        $message->to($user->email, $user->first_name . ' ' . $user->last_name);
+                        $message->subject('Welcome to Year in Review');
+                    });
+                }
+                else
+                {
+                    Mail::send('emails.manager_account', $data, function($message) use ($user) {
+                        $message->to($user->email, $user->first_name . ' ' . $user->last_name);
+                        $message->subject('Welcome to Year in Review');
+                    });
+                }
+                    
                 $bar->advance();
             } 
             $bar->finish();

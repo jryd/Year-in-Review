@@ -13,7 +13,7 @@ class RawStatsSeeder extends Seeder
     public function run()
     {
         //Balthazar
-        RawStats::create([
+        /*RawStats::create([
         	'user_id' => 3,
         	'emails_july' => 1599,
         	'emails_august' => 1697,
@@ -1505,7 +1505,7 @@ class RawStatsSeeder extends Seeder
             'quality_april' => xxx,
             'quality_may' => xxx,
             'quality_june' => xxx,
-        	]);
+        	]);*/
         	
         //Alicia	
         RawStats::create([
@@ -1573,7 +1573,7 @@ class RawStatsSeeder extends Seeder
         	]);
         	
         //Jason
-        RawStats::create([
+        /*RawStats::create([
         	'user_id' => 29,
         	'emails_july' => 753,
         	'emails_august' => 1173,
@@ -2285,6 +2285,6 @@ class RawStatsSeeder extends Seeder
             'quality_april' => xxx,
             'quality_may' => xxx,
             'quality_june' => xxx,
-        	]);
+        	]);*/
     }
 }

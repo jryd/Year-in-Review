@@ -24,6 +24,8 @@ Route::get('/activitylog/{id}', 'ActivityLogController@show');
 Route::get('/mystats', 'StatsController@mystats');
 Route::get('/teamstats', 'StatsController@teamstats');
 
+Route::get('/allteamstats', 'StatsController@allteamstats');
+
 Route::post('/sidebar/changestate', function() {
 	$user = \App\User::find(\Auth::user()->id);
 	if ($user->sidebar_min == 0)

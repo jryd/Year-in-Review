@@ -27,7 +27,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Token needed for any ajax calls -->
   <meta name="_token" content="{!! csrf_token() !!}"/>
   
-  @if (App::environment('production')
+  @if (App::environment('production'))
   <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -132,7 +132,10 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li class="home"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
         <li class="mystats"><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
-        <li class="teamstats"><a href="{{ url('teamstats') }}"><i class="fa fa-users"></i> <span>Team Stats</span></a></li>
+        <li class="teamstats"><a href="{{ url('/teamstats') }}"><i class="fa fa-users"></i> <span>Team Stats</span></a></li>
+        @if (Auth::user()->role_id > 8 || Auth::user()->role_id == 7)
+          <li class="allteamstats"><a href="{{ url('/allteamstats') }}"><i class="fa fa-users"></i> <span>All Team Stats</span></a></li>
+        @endif
         @if (Auth::user()->role_id == 10 || Auth::user()->role_id == 7)
           <li class="activitylog"><a href="{{ url('/activitylog') }}"><i class="fa fa-database"></i> <span>Activity Log</span></a></li>
         @endif

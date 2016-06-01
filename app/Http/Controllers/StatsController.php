@@ -36,4 +36,15 @@ class StatsController extends Controller
         Activity::log('Page View: Team Stats');
         return view('stats.teamstats');
     }
+
+    /**
+     * Show all team stats dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function allteamstats()
+    {
+        Activity::log('Page View: All Team Stats index');
+        return view('stats.allteamstats.index');
+    }
 }
