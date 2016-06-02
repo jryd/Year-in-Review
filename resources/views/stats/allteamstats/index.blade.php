@@ -4,8 +4,14 @@
 Pick a Team
 @endsection
 
-@section('breadcrumb')
+@section('pagetitle')
+Pick a Team
+<small>Which teams stats do you want to view?</small>
+@endsection
 
+@section('breadcrumb')
+<li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
+<li class="active"><i class="fa fa-line-chart"></i> All Team Stats</a></li>
 @endsection
 
 @section('content')

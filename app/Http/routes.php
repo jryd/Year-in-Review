@@ -25,6 +25,8 @@ Route::get('/mystats', 'StatsController@mystats');
 Route::get('/teamstats', 'StatsController@teamstats');
 
 Route::get('/allteamstats', 'StatsController@allteamstats');
+Route::get('/allteamstats/{team}', 'StatsController@allteamdirectory');
+Route::get('/allteamstats/{team}/{id}', 'StatsController@viewstats');
 
 Route::post('/sidebar/changestate', function() {
 	$user = \App\User::find(\Auth::user()->id);
