@@ -41,7 +41,7 @@ Your stats
           <span class="info-box-icon"><i class="ion ion-ios-email-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Emails</span>
-            <span class="info-box-number">x,xxx</span>
+            <span class="info-box-number">{{ number_format(Auth::user()->processedstats->emails) }}</span>
           <!-- /.info-box-content -->
           </div>
         <!-- /.info-box -->
@@ -51,7 +51,7 @@ Your stats
           <span class="info-box-icon"><i class="ion ion-ios-telephone-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Calls</span>
-            <span class="info-box-number">xx,xxx</span>
+            <span class="info-box-number">{{ number_format(Auth::user()->processedstats->calls_total) }}</span>
     			</div>
           <!-- /.info-box-content -->
         </div>
@@ -132,7 +132,7 @@ Your stats
     labels: ['Emails', 'Calls'],
     datasets: [
       {
-        data: [90, 20],
+        data: [{{ Auth::user()->processedstats->emails }}, {{ Auth::user()->processedstats->calls_total }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -149,7 +149,7 @@ Your stats
     labels: ['Your Emails', 'All Emails'],
     datasets: [
       {
-        data: [5, 90],
+        data: [{{ Auth::user()->processedstats->emails }}, {{ $cumulativestats->emails }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -166,7 +166,7 @@ Your stats
     labels: ['Your Calls', 'All Calls'],
     datasets: [
       {
-        data: [7, 85],
+        data: [{{ Auth::user()->processedstats->calls_inbound }}, {{ $cumulativestats->calls }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -188,7 +188,7 @@ Your stats
                 borderColor : '#da8c10',
                 pointBackgroundColor : '#F39C12',
                 pointBorderColor : '#da8c10',
-              data: [598, 603, 761, 870, 1227, 860, 1086, 1107, 605, 800, 600, 600]
+              data: [{{ Auth::user()->rawstats->emails_july }}, {{ Auth::user()->rawstats->emails_august }}, {{ Auth::user()->rawstats->emails_september }}, {{ Auth::user()->rawstats->emails_october }}, {{ Auth::user()->rawstats->emails_november }}, {{ Auth::user()->rawstats->emails_december }}, {{ Auth::user()->rawstats->emails_january }}, {{ Auth::user()->rawstats->emails_february }}, {{ Auth::user()->rawstats->emails_march }}, {{ Auth::user()->rawstats->emails_april }}, 600, 600]
           },
           {
               label: 'Calls',
@@ -196,7 +196,7 @@ Your stats
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
-              data: [309, 192, 131, 127, 346, 285, 379, 322, 130, 204, 170, 170]
+              data: [{{ Auth::user()->rawstats->calls_inbound_july }}, {{ Auth::user()->rawstats->calls_inbound_august }}, {{ Auth::user()->rawstats->calls_inbound_september }}, {{ Auth::user()->rawstats->calls_inbound_october }}, {{ Auth::user()->rawstats->calls_inbound_november }}, {{ Auth::user()->rawstats->calls_inbound_december }}, {{ Auth::user()->rawstats->calls_inbound_january }}, {{ Auth::user()->rawstats->calls_inbound_february }}, {{ Auth::user()->rawstats->calls_inbound_march }}, {{ Auth::user()->rawstats->calls_inbound_april }}, 170, 170]
           }
       ]
   };
