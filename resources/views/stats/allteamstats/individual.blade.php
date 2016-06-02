@@ -134,7 +134,7 @@
     labels: ['Emails', 'Calls'],
     datasets: [
       {
-        data: [90, 20],
+        data: [{{ $user->processedstats->emails }}, {{ $user->processedstats->calls_total }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -151,7 +151,7 @@
     labels: ['Your Emails', 'All Emails'],
     datasets: [
       {
-        data: [5, 90],
+        data: [{{ $user->processedstats->emails }}, {{ $cumulativestats->emails }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -168,7 +168,7 @@
     labels: ['Your Calls', 'All Calls'],
     datasets: [
       {
-        data: [7, 85],
+        data: [{{ $user->processedstats->calls_inbound }}, {{ $cumulativestats->calls }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -198,7 +198,7 @@
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
-              data: [309, 192, 131, 127, 346, 285, 379, 322, 130, 204, 170, 170]
+              data: [{{ $user->rawstats->calls_inbound_july }}, {{ $user->rawstats->calls_inbound_august }}, {{ $user->rawstats->calls_inbound_september }}, {{ $user->rawstats->calls_inbound_october }}, {{ $user->rawstats->calls_inbound_november }}, {{ $user->rawstats->calls_inbound_december }}, {{ $user->rawstats->calls_inbound_january }}, {{ $user->rawstats->calls_inbound_february }}, {{ $user->rawstats->calls_inbound_march }}, {{ $user->rawstats->calls_inbound_april }}, 170, 170]
           }
       ]
   };
