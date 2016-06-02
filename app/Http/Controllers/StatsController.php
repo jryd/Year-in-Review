@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Activity;
 use App\User;
+use App\CumulativeStats;
 
 class StatsController extends Controller
 {
@@ -23,8 +24,9 @@ class StatsController extends Controller
      */
     public function mystats()
     {
+        $cumulativestats = CumulativeStats::find(1);
         Activity::log('Page View: My Stats');
-        return view('stats.individualstats');
+        return view('stats.individualstats', compact('cumulativestats'));
     }
     
     /**
