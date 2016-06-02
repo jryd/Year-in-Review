@@ -90,7 +90,8 @@ class StatsController extends Controller
     public function viewstats($team, $id)
     {
         $user = User::find($id);
-
+        $cumulativestats = CumulativeStats::find(1);
+        
         if (is_null($user))
         {
             if($id == 'all')
@@ -106,7 +107,7 @@ class StatsController extends Controller
         else
         {
             Activity::log('Page View: ' . $user->first_name . ' ' . $user->last_name . ' through All Team Stats');
-            return view('stats.allteamstats.individual', compact('user'));
+            return view('stats.allteamstats.individual', compact('user', 'cumulativestats'));
         }
         Activity::log('Page View: All Team Stats index');
         return view('stats.allteamstats.index');
