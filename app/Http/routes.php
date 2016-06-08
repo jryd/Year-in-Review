@@ -21,13 +21,16 @@ Route::post('/setnewpassword', 'SetNewPasswordController@savePassword');
 Route::get('/activitylog', 'ActivityLogController@index');
 Route::get('/activitylog/{id}', 'ActivityLogController@show');
 
+//CSR routes
 Route::get('/mystats', 'StatsController@mystats');
 Route::get('/teamstats', 'StatsController@teamstats');
 
+//Manager routes
 Route::get('/allteamstats', 'StatsController@allteamstats');
 Route::get('/allteamstats/{team}', 'StatsController@allteamdirectory');
 Route::get('/allteamstats/{team}/{id}', 'StatsController@viewstats');
 
+//Sidebar change state
 Route::post('/sidebar/changestate', function() {
 	$user = \App\User::find(\Auth::user()->id);
 	if ($user->sidebar_min == 0)

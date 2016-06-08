@@ -196,6 +196,7 @@ class ProcessRawStats extends Command
             //Insert all of this in to the processed stats table
             $processed_stats = new ProcessedStats;
             $processed_stats->user_id = $raw_stats->user_id;
+            $processed_stats->role_id = $raw_stats->role_id;
             $processed_stats->emails = $total_emails;
             $processed_stats->calls_inbound = $total_calls_inbound;
             $processed_stats->calls_outbound = $total_calls_outbound;

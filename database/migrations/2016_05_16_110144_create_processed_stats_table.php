@@ -15,6 +15,7 @@ class CreateProcessedStatsTable extends Migration
         Schema::create('processed_stats', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
+            $table->integer('role_id');
             $table->integer('emails');
             $table->integer('calls_inbound');
             $table->integer('calls_outbound');

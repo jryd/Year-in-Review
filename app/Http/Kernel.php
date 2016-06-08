@@ -51,5 +51,6 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'setnewpassword' => \App\Http\Middleware\SetNewPassword::class,
         'protectactivitylog' => \App\Http\Middleware\ProtectActivityLog::class,
+        'checkifmanager' => \App\Http\Http\Middleware\CheckIfManager::class,
     ];
 }

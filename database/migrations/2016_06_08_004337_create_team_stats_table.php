@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRawStatsTable extends Migration
+class CreateTeamStatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,8 @@ class CreateRawStatsTable extends Migration
      */
     public function up()
     {
-        Schema::create('raw_stats', function (Blueprint $table) {
+        Schema::create('team_stats', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
             $table->integer('role_id');
             $table->integer('emails_july');
             $table->integer('emails_august');
@@ -76,8 +75,19 @@ class CreateRawStatsTable extends Migration
             $table->decimal('quality_april', 11, 2);
             $table->decimal('quality_may', 11, 2);
             $table->decimal('quality_june', 11, 2);
+            $table->integer('emails');
+            $table->integer('calls_inbound');
+            $table->integer('calls_outbound');
+            $table->integer('calls_total');
+            $table->string('best_email_month');
+            $table->string('best_email_quarter');
+            $table->string('best_call_month');
+            $table->string('best_call_quarter');
+            $table->string('best_output_month');
+            $table->string('best_output_quarter');
+            $table->string('best_quality_month');
+            $table->string('best_quality_quarter');
             $table->timestamps();
-        });
     }
 
     /**
@@ -87,6 +97,6 @@ class CreateRawStatsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('raw_stats');
+        Schema::drop('team_stats');
     }
 }

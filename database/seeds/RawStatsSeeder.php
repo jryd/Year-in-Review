@@ -15,6 +15,7 @@ class RawStatsSeeder extends Seeder
         //Balthazar
         /*RawStats::create([
         	'user_id' => 3,
+            'role_id' => 1,
         	'emails_july' => 1599,
         	'emails_august' => 1697,
         	'emails_september' => 1719,
@@ -80,6 +81,7 @@ class RawStatsSeeder extends Seeder
         //Blair
         RawStats::create([
         	'user_id' => 4,
+            'role_id' => 1,
         	'emails_july' => 1380,
         	'emails_august' => 1837,
         	'emails_september' => 1631,
@@ -145,6 +147,7 @@ class RawStatsSeeder extends Seeder
         //Alison
         RawStats::create([
         	'user_id' => 5,
+            'role_id' => 1,
         	'emails_july' => 1040,
         	'emails_august' => 1339,
         	'emails_september' => 1293,
@@ -210,6 +213,7 @@ class RawStatsSeeder extends Seeder
         //Hannah
         RawStats::create([
         	'user_id' => 6,
+            'role_id' => 1,
         	'emails_july' => 1063,
         	'emails_august' => 669,
         	'emails_september' => 904,
@@ -275,6 +279,7 @@ class RawStatsSeeder extends Seeder
         //Shara
         RawStats::create([
         	'user_id' => 7,
+            'role_id' => 1,
         	'emails_july' => 1013,
         	'emails_august' => 1242,
         	'emails_september' => 1102,
@@ -340,6 +345,7 @@ class RawStatsSeeder extends Seeder
         //Ella
         RawStats::create([
         	'user_id' => 8,
+            'role_id' => 1,
         	'emails_july' => 995,
         	'emails_august' => 846,
         	'emails_september' => 912,
@@ -405,6 +411,7 @@ class RawStatsSeeder extends Seeder
         //Ally
         RawStats::create([
         	'user_id' => 9,
+            'role_id' => 1,
         	'emails_july' => 1378,
         	'emails_august' => 1318,
         	'emails_september' => 1367,
@@ -470,6 +477,7 @@ class RawStatsSeeder extends Seeder
         //Emma
         RawStats::create([
         	'user_id' => 10,
+            'role_id' => 1,
         	'emails_july' => 1432,
         	'emails_august' => 968,
         	'emails_september' => 1387,
@@ -535,6 +543,7 @@ class RawStatsSeeder extends Seeder
         //Abe
         RawStats::create([
         	'user_id' => 11,
+            'role_id' => 1,
         	'emails_july' => 718,
         	'emails_august' => 1903,
         	'emails_september' => 853,
@@ -600,6 +609,7 @@ class RawStatsSeeder extends Seeder
         //Bobbi
         RawStats::create([
         	'user_id' => 12,
+            'role_id' => 1,
         	'emails_july' => 1479,
         	'emails_august' => 927,
         	'emails_september' => 924,
@@ -665,6 +675,7 @@ class RawStatsSeeder extends Seeder
         //Clare
         RawStats::create([
         	'user_id' => 13,
+            'role_id' => 1,
         	'emails_july' => 1870,
         	'emails_august' => 1877,
         	'emails_september' => 1545,
@@ -730,6 +741,7 @@ class RawStatsSeeder extends Seeder
         //Linda
         RawStats::create([
         	'user_id' => 15,
+            'role_id' => 2,
         	'emails_july' => 453,
         	'emails_august' => 1481,
         	'emails_september' => 595,
@@ -795,6 +807,7 @@ class RawStatsSeeder extends Seeder
         //Max
         RawStats::create([
         	'user_id' => 16,
+            'role_id' => 2,
         	'emails_july' => 1108,
         	'emails_august' => 1031,
         	'emails_september' => 1201,
@@ -860,6 +873,7 @@ class RawStatsSeeder extends Seeder
         //Alex S
         RawStats::create([
         	'user_id' => 17,
+            'role_id' => 2,
         	'emails_july' => 1125,
         	'emails_august' => 863,
         	'emails_september' => 821,
@@ -925,6 +939,7 @@ class RawStatsSeeder extends Seeder
         //Sam
         RawStats::create([
         	'user_id' => 18,
+            'role_id' => 2,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -990,6 +1005,7 @@ class RawStatsSeeder extends Seeder
         //Byron
         RawStats::create([
         	'user_id' => 19,
+            'role_id' => 2,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -1055,6 +1071,7 @@ class RawStatsSeeder extends Seeder
         //Kate
         RawStats::create([
         	'user_id' => 20,
+            'role_id' => 2,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -1120,6 +1137,7 @@ class RawStatsSeeder extends Seeder
         //Mahana
         RawStats::create([
         	'user_id' => 21,
+            'role_id' => 2,
         	'emails_july' => 1202,
         	'emails_august' => 925,
         	'emails_september' => 1215,
@@ -1185,6 +1203,7 @@ class RawStatsSeeder extends Seeder
         //Alex M
         RawStats::create([
         	'user_id' => 22,
+            'role_id' => 2,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -1250,6 +1269,7 @@ class RawStatsSeeder extends Seeder
         //Liz
         RawStats::create([
         	'user_id' => 23,
+            'role_id' => 2,
         	'emails_july' => 897,
         	'emails_august' => 1148,
         	'emails_september' => 1043,
@@ -1315,6 +1335,7 @@ class RawStatsSeeder extends Seeder
         //Gemma
         RawStats::create([
         	'user_id' => 25,
+            'role_id' => 3,
         	'emails_july' => 497,
         	'emails_august' => 889,
         	'emails_september' => 462,
@@ -1380,6 +1401,7 @@ class RawStatsSeeder extends Seeder
         //Gareth
         RawStats::create([
         	'user_id' => 26,
+            'role_id' => 3,
         	'emails_july' => 1438,
         	'emails_august' => 1132,
         	'emails_september' => 1148,
@@ -1445,6 +1467,7 @@ class RawStatsSeeder extends Seeder
         //Levi
         RawStats::create([
         	'user_id' => 27,
+            'role_id' => 3,
         	'emails_july' => 801,
         	'emails_august' => 815,
         	'emails_september' => 641,
@@ -1510,6 +1533,7 @@ class RawStatsSeeder extends Seeder
         //Alicia	
         RawStats::create([
         	'user_id' => 28,
+            'role_id' => 3,
         	'emails_july' => 598,
         	'emails_august' => 603,
         	'emails_september' => 761,
@@ -1575,6 +1599,7 @@ class RawStatsSeeder extends Seeder
         //Jason
         /*RawStats::create([
         	'user_id' => 29,
+            'role_id' => 3,
         	'emails_july' => 753,
         	'emails_august' => 1173,
         	'emails_september' => 816,
@@ -1640,6 +1665,7 @@ class RawStatsSeeder extends Seeder
         //Toby
         RawStats::create([
         	'user_id' => 30,
+            'role_id' => 3,
         	'emails_july' => 841,
         	'emails_august' => 586,
         	'emails_september' => 797,
@@ -1705,6 +1731,7 @@ class RawStatsSeeder extends Seeder
         //Harprit
         RawStats::create([
         	'user_id' => 31,
+            'role_id' => 3,
         	'emails_july' => 1409,
         	'emails_august' => 1588,
         	'emails_september' => 1420,
@@ -1770,6 +1797,7 @@ class RawStatsSeeder extends Seeder
         //Frankie
         RawStats::create([
         	'user_id' => 32,
+            'role_id' => 3,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -1835,6 +1863,7 @@ class RawStatsSeeder extends Seeder
         //Megan
         RawStats::create([
         	'user_id' => 33,
+            'role_id' => 3,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -1900,6 +1929,7 @@ class RawStatsSeeder extends Seeder
         //Vicky
         RawStats::create([
         	'user_id' => 34,
+            'role_id' => 3,
         	'emails_july' => 0,
         	'emails_august' => 0,
         	'emails_september' => 0,
@@ -1965,6 +1995,7 @@ class RawStatsSeeder extends Seeder
         //Wiremu
         RawStats::create([
         	'user_id' => 36,
+            'role_id' => 4,
         	'emails_july' => 1520,
         	'emails_august' => 1329,
         	'emails_september' => 1076,
@@ -2030,6 +2061,7 @@ class RawStatsSeeder extends Seeder
         //Marissa-Anne
         RawStats::create([
         	'user_id' => 37,
+            'role_id' => 4,
         	'emails_july' => 1378,
         	'emails_august' => 1112,
         	'emails_september' => 1062,
@@ -2095,6 +2127,7 @@ class RawStatsSeeder extends Seeder
         //Alepi
         RawStats::create([
         	'user_id' => 38,
+            'role_id' => 4,
         	'emails_july' => 1856,
         	'emails_august' => 1985,
         	'emails_september' => 1305,
@@ -2160,6 +2193,7 @@ class RawStatsSeeder extends Seeder
         //Jasmine
         RawStats::create([
         	'user_id' => 39,
+            'role_id' => 4,
         	'emails_july' => 403,
         	'emails_august' => 508,
         	'emails_september' => 870,
@@ -2225,6 +2259,7 @@ class RawStatsSeeder extends Seeder
         //Ra
         RawStats::create([
         	'user_id' => 40,
+            'role_id' => 4,
         	'emails_july' => 616,
         	'emails_august' => 559,
         	'emails_september' => 1033,
