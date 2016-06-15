@@ -12,7 +12,7 @@ class RawStatsSeeder extends Seeder
      */
     public function run()
     {
-        //Balthazar
+        //Balthazar 5103703
         /*RawStats::create([
         	'user_id' => 3,
             'role_id' => 1,
@@ -26,7 +26,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1625,
         	'emails_march' => 1402,
         	'emails_april' => 1575,
-        	'emails_may' => xxx,
+        	'emails_may' => 1736,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 74,
         	'calls_inbound_august' => 99,
@@ -62,7 +62,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 13.31,
             'output_march' => 12.62,
             'output_april' => 12.61,
-            'output_may' => xxx,
+            'output_may' => 12.75,
             'output_june' => xxx,
             'quality_july' => 87.3,
             'quality_august' => 92.6,
@@ -74,11 +74,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 83.2,
             'quality_march' => 81.3,
             'quality_april' => 87.33,
-            'quality_may' => xxx,
+            'quality_may' => 91.1,
             'quality_june' => xxx,
         	]);
         	
-        //Blair
+        //Blair 5103705
         RawStats::create([
         	'user_id' => 4,
             'role_id' => 1,
@@ -92,7 +92,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1527,
         	'emails_march' => 1858,
         	'emails_april' => 1875,
-        	'emails_may' => xxx,
+        	'emails_may' => 2146,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 483,
         	'calls_inbound_august' => 253,
@@ -128,7 +128,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 20.78,
             'output_march' => 17.18,
             'output_april' => 11.78,
-            'output_may' => xxx,
+            'output_may' => 18.15,
             'output_june' => xxx,
             'quality_july' => 88.3,
             'quality_august' => 90.3,
@@ -140,11 +140,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 91.5,
             'quality_march' => 92.4,
             'quality_april' => 92.4,
-            'quality_may' => xxx,
+            'quality_may' => 92.4,
             'quality_june' => xxx,
         	]);
         	
-        //Alison
+        //Alison 5103707
         RawStats::create([
         	'user_id' => 5,
             'role_id' => 1,
@@ -158,7 +158,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1706,
         	'emails_march' => 781,
         	'emails_april' => 1159,
-        	'emails_may' => xxx,
+        	'emails_may' => 1708,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 177,
         	'calls_inbound_august' => 365,
@@ -194,7 +194,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 13.06,
             'output_march' => 12.81,
             'output_april' => 12.08,
-            'output_may' => xxx,
+            'output_may' => 12.2,
             'output_june' => xxx,
             'quality_july' => 84.4,
             'quality_august' => 92.6,
@@ -206,11 +206,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 84,
             'quality_march' => 87.8,
             'quality_april' => 89.53,
-            'quality_may' => xxx,
+            'quality_may' => 89.0,
             'quality_june' => xxx,
         	]);
         	
-        //Hannah
+        //Hannah 5103712
         RawStats::create([
         	'user_id' => 6,
             'role_id' => 1,
@@ -224,7 +224,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 421,
         	'emails_march' => 381,
         	'emails_april' => 565,
-        	'emails_may' => xxx,
+        	'emails_may' => 493,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 7,
         	'calls_inbound_august' => 100,
@@ -260,7 +260,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 14.52,
             'output_march' => 8.64,
             'output_april' => 9.47,
-            'output_may' => xxx,
+            'output_may' => 9.97,
             'output_june' => xxx,
             'quality_july' => 87.5,
             'quality_august' => 90.6,
@@ -272,11 +272,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 91.1,
             'quality_march' => 89.8,
             'quality_april' => 89.82,
-            'quality_may' => xxx,
+            'quality_may' => 89.8,
             'quality_june' => xxx,
         	]);
         	
-        //Shara
+        //Shara 4600683
         RawStats::create([
         	'user_id' => 7,
             'role_id' => 1,
@@ -290,7 +290,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1147,
         	'emails_march' => 1283,
         	'emails_april' => 887,
-        	'emails_may' => xxx,
+        	'emails_may' => 1347,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 176,
         	'calls_inbound_august' => 196,
@@ -326,7 +326,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 12.52,
             'output_march' => 12.33,
             'output_april' => 11.92,
-            'output_may' => xxx,
+            'output_may' => 12.81,
             'output_june' => xxx,
             'quality_july' => 91.5,
             'quality_august' => 92.4,
@@ -338,11 +338,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 91.8,
             'quality_march' => 90.7,
             'quality_april' => 90.66,
-            'quality_may' => xxx,
+            'quality_may' => 90.7,
             'quality_june' => xxx,
         	]);
         	
-        //Ella
+        //Ella 	4955997
         RawStats::create([
         	'user_id' => 8,
             'role_id' => 1,
@@ -356,7 +356,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1436,
         	'emails_march' => 1175,
         	'emails_april' => 713,
-        	'emails_may' => xxx,
+        	'emails_may' => 1014,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 142,
         	'calls_inbound_august' => 197,
@@ -392,7 +392,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 14.71,
             'output_march' => 11.3,
             'output_april' => 10.16,
-            'output_may' => xxx,
+            'output_may' => 9.55,
             'output_june' => xxx,
             'quality_july' => 96.1,
             'quality_august' => 93.2,
@@ -404,7 +404,7 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 93.6,
             'quality_march' => 95.8,
             'quality_april' => 95.79,
-            'quality_may' => xxx,
+            'quality_may' => 95.8,
             'quality_june' => xxx,
         	]);
         
@@ -422,7 +422,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1294,
         	'emails_march' => 1318,
         	'emails_april' => 555,
-        	'emails_may' => xxx,
+        	'emails_may' => 446,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 412,
         	'calls_inbound_august' => 335,
@@ -459,7 +459,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.99,
             'output_april' => 9.04,
             'output_may' => xxx,
-            'output_june' => xxx,
+            'output_june' => 10.08,
             'quality_july' => 88.0,
             'quality_august' => 88.0,
             'quality_september' => 86.8,
@@ -470,11 +470,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 89.1,
             'quality_march' => 91.4,
             'quality_april' => 91.24,
-            'quality_may' => xxx,
+            'quality_may' => 92.1,
             'quality_june' => xxx,
         	]);
         	
-        //Emma
+        //Emma 4886054
         RawStats::create([
         	'user_id' => 10,
             'role_id' => 1,
@@ -488,7 +488,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1186,
         	'emails_march' => 961,
         	'emails_april' => 464,
-        	'emails_may' => xxx,
+        	'emails_may' => 400,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 229,
         	'calls_inbound_august' => 121,
@@ -524,7 +524,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.5,
             'output_march' => 10.02,
             'output_april' => 8.61,
-            'output_may' => xxx,
+            'output_may' => 9.46,
             'output_june' => xxx,
             'quality_july' => 84.7,
             'quality_august' => 92.5,
@@ -536,11 +536,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 85.2,
             'quality_march' => 85.4,
             'quality_april' => 86.06,
-            'quality_may' => xxx,
+            'quality_may' => 86,
             'quality_june' => xxx,
         	]);
         
-        //Abe
+        //Abe 4886057
         RawStats::create([
         	'user_id' => 11,
             'role_id' => 1,
@@ -554,7 +554,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 7,
         	'emails_march' => 697,
         	'emails_april' => 1842,
-        	'emails_may' => xxx,
+        	'emails_may' => 1839,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 36,
         	'calls_inbound_august' => 101,
@@ -590,7 +590,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 9.48,
             'output_april' => 14.12,
-            'output_may' => xxx,
+            'output_may' => 12.73,
             'output_june' => xxx,
             'quality_july' => 86.2,
             'quality_august' => 85.4,
@@ -602,11 +602,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 86.8,
             'quality_april' => 89.13,
-            'quality_may' => xxx,
+            'quality_may' => 86.7,
             'quality_june' => xxx,
         	]);
         	
-        //Bobbi
+        //Bobbi 4327586
         RawStats::create([
         	'user_id' => 12,
             'role_id' => 1,
@@ -620,7 +620,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 752,
         	'emails_march' => 1780,
         	'emails_april' => 1228,
-        	'emails_may' => xxx,
+        	'emails_may' => 1518,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 81,
         	'calls_inbound_august' => 160,
@@ -656,7 +656,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.42,
             'output_march' => 12.33,
             'output_april' => 11.78,
-            'output_may' => xxx,
+            'output_may' => 12.34,
             'output_june' => xxx,
             'quality_july' => 78.7,
             'quality_august' => 76.3,
@@ -668,11 +668,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 78.4,
             'quality_march' => 78.2,
             'quality_april' => 79.36,
-            'quality_may' => xxx,
+            'quality_may' => 81.0,
             'quality_june' => xxx,
         	]);
         	
-        //Clare
+        //Clare 5419221
         RawStats::create([
         	'user_id' => 13,
             'role_id' => 1,
@@ -686,7 +686,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1027,
         	'emails_march' => 1305,
         	'emails_april' => 955,
-        	'emails_may' => xxx,
+        	'emails_may' => 1260,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 187,
         	'calls_inbound_august' => 161,
@@ -722,7 +722,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 10.92,
             'output_march' => 12.09,
             'output_april' => 10.54,
-            'output_may' => xxx,
+            'output_may' => 10.89,
             'output_june' => xxx,
             'quality_july' => 85.2,
             'quality_august' => 86.7,
@@ -734,11 +734,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 80.4,
             'quality_march' => 85.7,
             'quality_april' => 91.45,
-            'quality_may' => xxx,
+            'quality_may' => 90.4,
             'quality_june' => xxx,
         	]);
         	
-        //Linda
+        //Linda 4672152
         RawStats::create([
         	'user_id' => 15,
             'role_id' => 2,
@@ -752,7 +752,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1292,
         	'emails_march' => 747,
         	'emails_april' => 717,
-        	'emails_may' => xxx,
+        	'emails_may' => 427,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 148,
         	'calls_inbound_august' => 348,
@@ -788,7 +788,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 13.33,
             'output_march' => 13.01,
             'output_april' => 10.88,
-            'output_may' => xxx,
+            'output_may' => 10.67,
             'output_june' => xxx,
             'quality_july' => 78.9,
             'quality_august' => 81.4,
@@ -800,11 +800,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 86.6,
             'quality_march' => 84,
             'quality_april' => 86.3,
-            'quality_may' => xxx,
+            'quality_may' => 88.6,
             'quality_june' => xxx,
         	]);
         	
-        //Max
+        //Max 4794122
         RawStats::create([
         	'user_id' => 16,
             'role_id' => 2,
@@ -818,7 +818,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1215,
         	'emails_march' => 901,
         	'emails_april' => 1352,
-        	'emails_may' => xxx,
+        	'emails_may' => 1041,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 237,
         	'calls_inbound_august' => 226,
@@ -854,7 +854,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 13.55,
             'output_march' => 11.82,
             'output_april' => 14.54,
-            'output_may' => xxx,
+            'output_may' => 8.3,
             'output_june' => xxx,
             'quality_july' => 83.1,
             'quality_august' => 80.8,
@@ -866,11 +866,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 88.4,
             'quality_march' => 88.9,
             'quality_april' => 87.18,
-            'quality_may' => xxx,
+            'quality_may' => 87.8,
             'quality_june' => xxx,
         	]);
         	
-        //Alex S
+        //Alex S 4956002
         RawStats::create([
         	'user_id' => 17,
             'role_id' => 2,
@@ -884,7 +884,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1020,
         	'emails_march' => 1538,
         	'emails_april' => 1092,
-        	'emails_may' => xxx,
+        	'emails_may' => 1184,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 170,
         	'calls_inbound_august' => 173,
@@ -920,7 +920,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.81,
             'output_march' => 12.13,
             'output_april' => 10.16,
-            'output_may' => xxx,
+            'output_may' => 10.87,
             'output_june' => xxx,
             'quality_july' => 85.8,
             'quality_august' => 87.3,
@@ -932,7 +932,7 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 84.1,
             'quality_march' => 86.2,
             'quality_april' => 90.15,
-            'quality_may' => xxx,
+            'quality_may' => 91.7,
             'quality_june' => xxx,
         	]);
         	
@@ -950,7 +950,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 306,
         	'emails_march' => 294,
         	'emails_april' => 758,
-        	'emails_may' => xxx,
+        	'emails_may' => 744,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -986,7 +986,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 5.47,
             'output_april' => 8.11,
-            'output_may' => xxx,
+            'output_may' => 9.15,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -998,11 +998,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 88.9,
             'quality_april' => 91.41,
-            'quality_may' => xxx,
+            'quality_may' => 93.0,
             'quality_june' => xxx,
         	]);
         	
-        //Byron
+        //Byron 5753546
         RawStats::create([
         	'user_id' => 19,
             'role_id' => 2,
@@ -1016,7 +1016,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 315,
         	'emails_march' => 275,
         	'emails_april' => 518,
-        	'emails_may' => xxx,
+        	'emails_may' => 823,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1052,7 +1052,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 4.93,
             'output_april' => 6.09,
-            'output_may' => xxx,
+            'output_may' => 8.46,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -1063,12 +1063,12 @@ class RawStatsSeeder extends Seeder
             'quality_january' => 0,
             'quality_february' => 0,
             'quality_march' => 91.4,
-            'quality_april' => 91,
-            'quality_may' => xxx,
+            'quality_april' => 91.0,
+            'quality_may' => 91.0,
             'quality_june' => xxx,
         	]);
         	
-        //Kate
+        //Kate 5753548
         RawStats::create([
         	'user_id' => 20,
             'role_id' => 2,
@@ -1082,7 +1082,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 292,
         	'emails_march' => 271,
         	'emails_april' => 493,
-        	'emails_may' => xxx,
+        	'emails_may' => 541,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1118,7 +1118,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 4.84,
             'output_april' => 8.18,
-            'output_may' => xxx,
+            'output_may' => 9.95,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -1130,11 +1130,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 85.5,
             'quality_april' => 88.4,
-            'quality_may' => xxx,
+            'quality_may' => 90.1,
             'quality_june' => xxx,
         	]);
         	
-        //Mahana
+        //Mahana 5337572
         RawStats::create([
         	'user_id' => 21,
             'role_id' => 2,
@@ -1148,7 +1148,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 875,
         	'emails_march' => 753,
         	'emails_april' => 960,
-        	'emails_may' => xxx,
+        	'emails_may' => 995,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 516,
         	'calls_inbound_august' => 336,
@@ -1184,7 +1184,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 12.81,
             'output_march' => 11.25,
             'output_april' => 12.52,
-            'output_may' => xxx,
+            'output_may' => 12.52,
             'output_june' => xxx,
             'quality_july' => 89.7,
             'quality_august' => 93.3,
@@ -1196,7 +1196,7 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 93.5,
             'quality_march' => 93.5,
             'quality_april' => 91.98,
-            'quality_may' => xxx,
+            'quality_may' => 91.98,
             'quality_june' => xxx,
         	]);
         	
@@ -1214,7 +1214,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 0,
         	'emails_march' => 0,
         	'emails_april' => 249,
-        	'emails_may' => xxx,
+        	'emails_may' => 457,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1250,7 +1250,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 0,
             'output_april' => 0,
-            'output_may' => xxx,
+            'output_may' => 0,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -1262,11 +1262,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 0,
             'quality_april' => 0,
-            'quality_may' => xxx,
+            'quality_may' => 0,
             'quality_june' => xxx,
         	]);
         	
-        //Liz
+        //Liz 4481520
         RawStats::create([
         	'user_id' => 23,
             'role_id' => 2,
@@ -1280,7 +1280,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 766,
         	'emails_march' => 1091,
         	'emails_april' => 1198,
-        	'emails_may' => xxx,
+        	'emails_may' => 1271,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 1,
         	'calls_inbound_august' => 0,
@@ -1332,7 +1332,7 @@ class RawStatsSeeder extends Seeder
             'quality_june' => 0,
         	]);
         	
-        //Gemma
+        //Gemma 3405900
         RawStats::create([
         	'user_id' => 25,
             'role_id' => 3,
@@ -1346,7 +1346,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 573,
         	'emails_march' => 544,
         	'emails_april' => 487,
-        	'emails_may' => xxx,
+        	'emails_may' => 471,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 130,
         	'calls_inbound_august' => 165,
@@ -1382,7 +1382,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 14,
             'output_march' => 16.9,
             'output_april' => 10.65,
-            'output_may' => xxx,
+            'output_may' => 11.28,
             'output_june' => xxx,
             'quality_july' => 82.5,
             'quality_august' => 87.9,
@@ -1394,11 +1394,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 89.5,
             'quality_march' => 84.9,
             'quality_april' => 86.95,
-            'quality_may' => xxx,
+            'quality_may' => 85.8,
             'quality_june' => xxx,
         	]);
         	
-        //Gareth
+        //Gareth 4860223
         RawStats::create([
         	'user_id' => 26,
             'role_id' => 3,
@@ -1412,7 +1412,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 479,
         	'emails_march' => 965,
         	'emails_april' => 826,
-        	'emails_may' => xxx,
+        	'emails_may' => 866,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 132,
         	'calls_inbound_august' => 115,
@@ -1448,7 +1448,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 16.97,
             'output_march' => 15.67,
             'output_april' => 13.31,
-            'output_may' => xxx,
+            'output_may' => 15.3,
             'output_june' => xxx,
             'quality_july' => 85.5,
             'quality_august' => 80.7,
@@ -1460,11 +1460,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 90.9,
             'quality_march' => 90.7,
             'quality_april' => 88.88,
-            'quality_may' => xxx,
+            'quality_may' => 90.3,
             'quality_june' => xxx,
         	]);
         	
-        //Levi
+        //Levi 5337688
         RawStats::create([
         	'user_id' => 27,
             'role_id' => 3,
@@ -1478,7 +1478,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 656,
         	'emails_march' => 998,
         	'emails_april' => 809,
-        	'emails_may' => xxx,
+        	'emails_may' => 848,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 36,
         	'calls_inbound_august' => 78,
@@ -1514,7 +1514,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.85,
             'output_march' => 12.16,
             'output_april' => 11.04,
-            'output_may' => xxx,
+            'output_may' => 11.34,
             'output_june' => xxx,
             'quality_july' => 83.8,
             'quality_august' => 84.6,
@@ -1526,11 +1526,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 90.1,
             'quality_march' => 90.8,
             'quality_april' => 90.75,
-            'quality_may' => xxx,
+            'quality_may' => 90.6,
             'quality_june' => xxx,
         	]);*/
         	
-        //Alicia	
+        //Alicia 5337563
         RawStats::create([
         	'user_id' => 28,
             'role_id' => 3,
@@ -1544,7 +1544,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1107,
         	'emails_march' => 605,
         	'emails_april' => 800,
-        	'emails_may' => 600,
+        	'emails_may' => 1195,
         	'emails_june' => 600,
 			'calls_inbound_july' => 270,
         	'calls_inbound_august' => 170,
@@ -1580,7 +1580,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 14.7,
             'output_march' => 13.6,
             'output_april' => 13.7,
-            'output_may' => 11,
+            'output_may' => 14.25,
             'output_june' => 11,
             'quality_july' => 88,
             'quality_august' => 93.1,
@@ -1596,7 +1596,7 @@ class RawStatsSeeder extends Seeder
             'quality_june' => 92.7,
         	]);
         	
-        //Jason
+        //Jason 4672122
         /*RawStats::create([
         	'user_id' => 29,
             'role_id' => 3,
@@ -1610,7 +1610,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 794,
         	'emails_march' => 636,
         	'emails_april' => 634,
-        	'emails_may' => xxx,
+        	'emails_may' => 760,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 160,
         	'calls_inbound_august' => 250,
@@ -1646,7 +1646,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.33,
             'output_march' => 11.02,
             'output_april' => 10.95,
-            'output_may' => xxx,
+            'output_may' => 10.55,
             'output_june' => xxx,
             'quality_july' => 76.0,
             'quality_august' => 76.0,
@@ -1658,11 +1658,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 78.8,
             'quality_march' => 79.8,
             'quality_april' => 85.46,
-            'quality_may' => xxx,
+            'quality_may' => 81.9,
             'quality_june' => xxx,
         	]);
         	
-        //Toby
+        //Toby 4011436
         RawStats::create([
         	'user_id' => 30,
             'role_id' => 3,
@@ -1676,7 +1676,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 2188,
         	'emails_march' => 1856,
         	'emails_april' => 1927,
-        	'emails_may' => xxx,
+        	'emails_may' => 1811,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1728,7 +1728,7 @@ class RawStatsSeeder extends Seeder
             'quality_june' => 0,
         	]);
         	
-        //Harprit
+        //Harprit 5419231
         RawStats::create([
         	'user_id' => 31,
             'role_id' => 3,
@@ -1742,7 +1742,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1118,
         	'emails_march' => 1099,
         	'emails_april' => 1164,
-        	'emails_may' => xxx,
+        	'emails_may' => 1317,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 173,
         	'calls_inbound_august' => 298,
@@ -1778,7 +1778,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.34,
             'output_march' => 10.42,
             'output_april' => 10.87,
-            'output_may' => xxx,
+            'output_may' => 11.43,
             'output_june' => xxx,
             'quality_july' => 92.1,
             'quality_august' => 90.5,
@@ -1790,11 +1790,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 92.6,
             'quality_march' => 94.1,
             'quality_april' => 94.07,
-            'quality_may' => xxx,
+            'quality_may' => 94.1,
             'quality_june' => xxx,
         	]);
         	
-        //Frankie
+        //Frankie 5840548
         RawStats::create([
         	'user_id' => 32,
             'role_id' => 3,
@@ -1808,7 +1808,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 0,
         	'emails_march' => 0,
         	'emails_april' => 247,
-        	'emails_may' => xxx,
+        	'emails_may' => 637,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1844,7 +1844,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 0,
             'output_april' => 0,
-            'output_may' => xxx,
+            'output_may' => 0,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -1856,11 +1856,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 0,
             'quality_april' => 0,
-            'quality_may' => xxx,
+            'quality_may' => 0,
             'quality_june' => xxx,
         	]);
         	
-        //Megan
+        //Megan 5840547
         RawStats::create([
         	'user_id' => 33,
             'role_id' => 3,
@@ -1874,7 +1874,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 0,
         	'emails_march' => 0,
         	'emails_april' => 223,
-        	'emails_may' => xxx,
+        	'emails_may' => 638,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1910,7 +1910,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 0,
             'output_april' => 0,
-            'output_may' => xxx,
+            'output_may' => 0,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -1922,11 +1922,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 0,
             'quality_april' => 0,
-            'quality_may' => xxx,
+            'quality_may' => 0,
             'quality_june' => xxx,
         	]);
         	
-        //Vicky
+        //Vicky 4886056
         RawStats::create([
         	'user_id' => 34,
             'role_id' => 3,
@@ -1940,7 +1940,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 0,
         	'emails_march' => 138,
         	'emails_april' => 657,
-        	'emails_may' => xxx,
+        	'emails_may' => 498,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 0,
         	'calls_inbound_august' => 0,
@@ -1976,7 +1976,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 0,
             'output_march' => 0,
             'output_april' => 0,
-            'output_may' => xxx,
+            'output_may' => 9.13,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -1988,11 +1988,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 0,
             'quality_march' => 0,
             'quality_april' => 0,
-            'quality_may' => xxx,
+            'quality_may' => 85.9,
             'quality_june' => xxx,
         	]);
         	
-        //Wiremu
+        //Wiremu 4794119
         RawStats::create([
         	'user_id' => 36,
             'role_id' => 4,
@@ -2006,7 +2006,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 836,
         	'emails_march' => 558,
         	'emails_april' => 981,
-        	'emails_may' => xxx,
+        	'emails_may' => 832,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 78,
         	'calls_inbound_august' => 69,
@@ -2042,7 +2042,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 11.82,
             'output_march' => 11.91,
             'output_april' => 11.66,
-            'output_may' => xxx,
+            'output_may' => 12.73,
             'output_june' => xxx,
             'quality_july' => 82.2,
             'quality_august' => 82.2,
@@ -2054,11 +2054,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 83.7,
             'quality_march' => 87.7,
             'quality_april' => 89.44,
-            'quality_may' => xxx,
+            'quality_may' => 87.9,
             'quality_june' => xxx,
         	]);
         	
-        //Marissa-Anne
+        //Marissa-Anne 	4481528
         RawStats::create([
         	'user_id' => 37,
             'role_id' => 4,
@@ -2072,7 +2072,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1162,
         	'emails_march' => 1303,
         	'emails_april' => 628,
-        	'emails_may' => xxx,
+        	'emails_may' => 984,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 79,
         	'calls_inbound_august' => 51,
@@ -2108,7 +2108,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 13.47,
             'output_march' => 14.18,
             'output_april' => 12.38,
-            'output_may' => xxx,
+            'output_may' => 13.05,
             'output_june' => xxx,
             'quality_july' => 91.6,
             'quality_august' => 94.0,
@@ -2120,11 +2120,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 91.4,
             'quality_march' => 89.9,
             'quality_april' => 90.21,
-            'quality_may' => xxx,
+            'quality_may' => 90.2,
             'quality_june' => xxx,
         	]);
         	
-        //Alepi
+        //Alepi 3692376
         RawStats::create([
         	'user_id' => 38,
             'role_id' => 4,
@@ -2138,7 +2138,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1807,
         	'emails_march' => 1733,
         	'emails_april' => 988,
-        	'emails_may' => xxx,
+        	'emails_may' => 1187,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 33,
         	'calls_inbound_august' => 48,
@@ -2174,7 +2174,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 14.18,
             'output_march' => 17.04,
             'output_april' => 12.03,
-            'output_may' => xxx,
+            'output_may' => 12.66,
             'output_june' => xxx,
             'quality_july' => 82.9,
             'quality_august' => 85.5,
@@ -2186,11 +2186,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 91.7,
             'quality_march' => 92.6,
             'quality_april' => 91.06,
-            'quality_may' => xxx,
+            'quality_may' => 93.64,
             'quality_june' => xxx,
         	]);
         	
-        //Jasmine
+        //Jasmine 5505254
         RawStats::create([
         	'user_id' => 39,
             'role_id' => 4,
@@ -2204,7 +2204,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 957,
         	'emails_march' => 941,
         	'emails_april' => 1410,
-        	'emails_may' => xxx,
+        	'emails_may' => 899,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 94,
         	'calls_inbound_august' => 43,
@@ -2240,7 +2240,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 12.21,
             'output_march' => 11.29,
             'output_april' => 11.64,
-            'output_may' => xxx,
+            'output_may' => 11.22,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -2252,11 +2252,11 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 86.3,
             'quality_march' => 88.9,
             'quality_april' => 92.15,
-            'quality_may' => xxx,
+            'quality_may' => 92.9,
             'quality_june' => xxx,
         	]);
         	
-        //Ra
+        //Ra 5505255
         RawStats::create([
         	'user_id' => 40,
             'role_id' => 4,
@@ -2270,7 +2270,7 @@ class RawStatsSeeder extends Seeder
         	'emails_february' => 1172,
         	'emails_march' => 1200,
         	'emails_april' => 1233,
-        	'emails_may' => xxx,
+        	'emails_may' => 1020,
         	'emails_june' => xxx,
 			'calls_inbound_july' => 149,
         	'calls_inbound_august' => 76,
@@ -2306,7 +2306,7 @@ class RawStatsSeeder extends Seeder
             'output_february' => 12.11,
             'output_march' => 11.56,
             'output_april' => 12.2,
-            'output_may' => xxx,
+            'output_may' => 14.83,
             'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
@@ -2318,7 +2318,7 @@ class RawStatsSeeder extends Seeder
             'quality_february' => 80.9,
             'quality_march' => 82.2,
             'quality_april' => 87.93,
-            'quality_may' => xxx,
+            'quality_may' => 93.1,
             'quality_june' => xxx,
         	]);*/
     }
