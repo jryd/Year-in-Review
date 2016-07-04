@@ -1293,7 +1293,7 @@ class RawStatsSeeder extends Seeder
         	'calls_inbound_march' => 0,
         	'calls_inbound_april' => 15,
         	'calls_inbound_may' => 5,
-        	'calls_inbound_june' => xxx,
+        	'calls_inbound_june' => 0,
 			'calls_outbound_july' => 4,
         	'calls_outbound_august' => 3,
         	'calls_outbound_september' => 3,
