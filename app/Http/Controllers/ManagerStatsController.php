@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use Activity;
+use App\User;
+use App\CumulativeStats;
+use App\TeamStats;
+
 class ManagerStatsController extends Controller
 {
     /**
@@ -60,7 +65,7 @@ class ManagerStatsController extends Controller
     public function viewstats($team, $id)
     {
         $user = User::find($id);
-        $cumulativestats = CumulativeStats::find(1);
+        $cumulative = CumulativeStats::find(1);
         
         if (is_null($user))
         {
@@ -68,20 +73,19 @@ class ManagerStatsController extends Controller
             {
                 if($team == 'daycrew')
                 {
-                    $processedstats = ProcessedStats::where('role_id', '=', 1)->get();
-                    
+                    $team = TeamStats::where('role_id', '=', 1)->first();                    
                 }
                 elseif($team == 'eveningcrewone')
                 {
-
+                    $team = TeamStats::where('role_id', '=', 2)->first();                    
                 }
                 elseif($team == 'eveningcrewtwo')
                 {
-
+                    $team = TeamStats::where('role_id', '=', 3)->first();
                 }
                 elseif($team == 'nightwalkers')
                 {
-
+                    $team = TeamStats::where('role_id', '=', 4)->first();
                 }
                 else
                 {
@@ -98,9 +102,9 @@ class ManagerStatsController extends Controller
         else
         {
             Activity::log('Page View: ' . $user->first_name . ' ' . $user->last_name . ' through All Team Stats');
-            return view('stats.allteamstats.individual', compact('user', 'cumulativestats'));
+            return view('stats.allteamstats.individual', compact('user', 'cumulative'));
         }
-        Activity::log('Page View: All Team Stats index');
-        return view('stats.allteamstats.index');
+        Activity::log('Page View: All Team Stats team');
+        return view('stats.allteamstats.team', compact('team', 'cumulative'));
     }
 }

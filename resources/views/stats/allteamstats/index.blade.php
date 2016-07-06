@@ -26,7 +26,7 @@ Pick a Team
 	            <div class="icon">
 	              <i class="ion ion-ios-sunny-outline"></i>
 	            </div>
-	            <a href="{{ url('/allteamstats/eveningcrewone') }}" class="small-box-footer">
+	            <a href="{{ url('/allteamstats/daycrew') }}" class="small-box-footer">
 	              View Stats <i class="fa fa-arrow-circle-right"></i>
 	            </a>
           </div>

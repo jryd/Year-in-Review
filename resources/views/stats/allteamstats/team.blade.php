@@ -1,19 +1,19 @@
 @extends('master')
 
 @section('title')
-{{ $user->first_name }}'s Stats
+@if($team->role_id == 1) Day Crew @elseif($team->role_id == 2) Evening Crew One @elseif($team->role_id == 3) Evening Crew Two @else Nightwalker @endif Stats
 @endsection
 
 @section('pagetitle')
-{{ $user->first_name }}'s stats
-<small>What did {{ $user->first_name }} do in playing their part?</small>
+@if($team->role_id == 1) Day Crew @elseif($team->role_id == 2) Evening Crew One @elseif($team->role_id == 3) Evening Crew Two @else Nightwalker @endif stats
+<small>What did they do in playing their part?</small>
 @endsection
 
 @section('breadcrumb')
 <li><a href="{{ url('/') }}"><i class="fa fa-home"></i> Home</a></li>
 <li><a href="{{ url('/allteamstats') }}"><i class="fa fa-users"></i> All Team Stats</a></li>
 <li><a href="{{ URL::previous() }}"><i class="fa fa-user"></i> Team Directory</a></li>
-<li class="active"><i class="fa fa-line-chart"></i> {{ $user->first_name }}'s Stats</a></li>
+<li class="active"><i class="fa fa-line-chart"></i> @if($team->role_id == 1) Day Crew @elseif($team->role_id == 2) Evening Crew One @elseif($team->role_id == 3) Evening Crew Two @else Nightwalker @endif Stats</a></li>
 @endsection
 
 @section('content')
@@ -43,7 +43,7 @@
           <span class="info-box-icon"><i class="ion ion-ios-email-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Emails</span>
-            <span class="info-box-number">{{ number_format($user->processedstats->emails) }}</span>
+            <span class="info-box-number">{{ number_format($team->emails) }}</span>
           <!-- /.info-box-content -->
           </div>
         <!-- /.info-box -->
@@ -53,7 +53,7 @@
           <span class="info-box-icon"><i class="ion ion-ios-telephone-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Calls</span>
-            <span class="info-box-number">{{ number_format($user->processedstats->calls_total) }}</span>
+            <span class="info-box-number">{{ number_format($team->calls_inbound + $team->calls_outbound) }}</span>
     			</div>
           <!-- /.info-box-content -->
         </div>
@@ -134,7 +134,7 @@
     labels: ['Emails', 'Calls'],
     datasets: [
       {
-        data: [{{ $user->processedstats->emails }}, {{ $user->processedstats->calls_total }}],
+        data: [{{ $team->emails }}, {{ $team->calls_inbound + $team->calls_outbound }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -151,7 +151,7 @@
     labels: ['Your Emails', 'All Emails'],
     datasets: [
       {
-        data: [{{ $user->processedstats->emails }}, {{ $cumulativestats->emails }}],
+        data: [{{ $team->emails }}, {{ $cumulative->emails }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -168,7 +168,7 @@
     labels: ['Your Calls', 'All Calls'],
     datasets: [
       {
-        data: [{{ $user->processedstats->calls_inbound }}, {{ $cumulativestats->calls }}],
+        data: [{{ $team->calls_inbound + $team->calls_outbound }}, {{ $cumulative->calls }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -190,7 +190,7 @@
                 borderColor : '#da8c10',
                 pointBackgroundColor : '#F39C12',
                 pointBorderColor : '#da8c10',
-              data: [{{ $user->rawstats->emails_july }}, {{ $user->rawstats->emails_august }}, {{ $user->rawstats->emails_september }}, {{ $user->rawstats->emails_october }}, {{ $user->rawstats->emails_november }}, {{ $user->rawstats->emails_december }}, {{ $user->rawstats->emails_january }}, {{ $user->rawstats->emails_february }}, {{ $user->rawstats->emails_march }}, {{ $user->rawstats->emails_april }}, 600, 600]
+              data: [{{ $team->emails_july }}, {{ $team->emails_august }}, {{ $team->emails_september }}, {{ $team->emails_october }}, {{ $team->emails_november }}, {{ $team->emails_december }}, {{ $team->emails_january }}, {{ $team->emails_february }}, {{ $team->emails_march }}, {{ $team->emails_april }}, {{ $team->emails_may }}, {{ $team->emails_june }}]
           },
           {
               label: 'Calls',
@@ -198,7 +198,7 @@
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
-              data: [{{ $user->rawstats->calls_inbound_july }}, {{ $user->rawstats->calls_inbound_august }}, {{ $user->rawstats->calls_inbound_september }}, {{ $user->rawstats->calls_inbound_october }}, {{ $user->rawstats->calls_inbound_november }}, {{ $user->rawstats->calls_inbound_december }}, {{ $user->rawstats->calls_inbound_january }}, {{ $user->rawstats->calls_inbound_february }}, {{ $user->rawstats->calls_inbound_march }}, {{ $user->rawstats->calls_inbound_april }}, 170, 170]
+              data: [{{ $team->calls_inbound_july }}, {{ $team->calls_inbound_august }}, {{ $team->calls_inbound_september }}, {{ $team->calls_inbound_october }}, {{ $team->calls_inbound_november }}, {{ $team->calls_inbound_december }}, {{ $team->calls_inbound_january }}, {{ $team->calls_inbound_february }}, {{ $team->calls_inbound_march }}, {{ $team->calls_inbound_april }}, {{ $team->calls_inbound_may }}, {{ $team->calls_inbound_june }}]
           }
       ]
   };

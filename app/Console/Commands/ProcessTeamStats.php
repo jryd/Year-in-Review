@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\RawStats;
 use App\ProcessedStats;
+use App\TeamStats;
 
 class ProcessTeamStats extends Command
 {
@@ -116,7 +117,7 @@ class ProcessTeamStats extends Command
 
         //Day Crew
         $daycrewrawstats = RawStats::where('role_id', '=', 1)->get();
-        foreach ($daycrewrawstats as $rawstats)
+        foreach ($daycrewrawstats as $raw_stats)
         {
             $emails_july += $raw_stats->emails_july;
             $emails_august += $raw_stats->emails_august;
@@ -193,6 +194,55 @@ class ProcessTeamStats extends Command
         }
         $daycrewteamstats = new TeamStats;
         //save all entries
+        $daycrewteamstats->role_id = 1;
+        $daycrewteamstats->emails_july = $emails_july;
+        $daycrewteamstats->emails_august = $emails_august;
+        $daycrewteamstats->emails_september = $emails_september;
+        $daycrewteamstats->emails_october = $emails_october;
+        $daycrewteamstats->emails_november = $emails_november;
+        $daycrewteamstats->emails_december = $emails_december;
+        $daycrewteamstats->emails_january = $emails_january;
+        $daycrewteamstats->emails_february = $emails_february;
+        $daycrewteamstats->emails_march = $emails_march;
+        $daycrewteamstats->emails_april = $emails_april;
+        $daycrewteamstats->emails_may = $emails_may;
+        $daycrewteamstats->emails_june = $emails_june;
+        $daycrewteamstats->calls_inbound_july = $calls_inbound_july;
+        $daycrewteamstats->calls_inbound_august = $calls_inbound_august;
+        $daycrewteamstats->calls_inbound_september = $calls_inbound_september;
+        $daycrewteamstats->calls_inbound_october = $calls_inbound_october;
+        $daycrewteamstats->calls_inbound_november = $calls_inbound_november;
+        $daycrewteamstats->calls_inbound_december = $calls_inbound_december;
+        $daycrewteamstats->calls_inbound_january = $calls_inbound_january;
+        $daycrewteamstats->calls_inbound_february = $calls_inbound_february;
+        $daycrewteamstats->calls_inbound_march = $calls_inbound_march;
+        $daycrewteamstats->calls_inbound_april = $calls_inbound_april;
+        $daycrewteamstats->calls_inbound_may = $calls_inbound_may;
+        $daycrewteamstats->calls_inbound_june = $calls_inbound_june;
+        $daycrewteamstats->calls_outbound_july = $calls_outbound_july;
+        $daycrewteamstats->calls_outbound_august = $calls_outbound_august;
+        $daycrewteamstats->calls_outbound_september = $calls_outbound_september;
+        $daycrewteamstats->calls_outbound_october = $calls_outbound_october;
+        $daycrewteamstats->calls_outbound_november = $calls_outbound_november;
+        $daycrewteamstats->calls_outbound_december = $calls_outbound_december;
+        $daycrewteamstats->calls_outbound_january = $calls_outbound_january;
+        $daycrewteamstats->calls_outbound_february = $calls_outbound_february;
+        $daycrewteamstats->calls_outbound_march = $calls_outbound_march;
+        $daycrewteamstats->calls_outbound_april = $calls_outbound_april;
+        $daycrewteamstats->calls_outbound_may = $calls_outbound_may;
+        $daycrewteamstats->calls_outbound_june = $calls_outbound_june;
+        $daycrewteamstats->calls_total_july = $calls_july_total;
+        $daycrewteamstats->calls_total_august = $calls_august_total;
+        $daycrewteamstats->calls_total_september = $calls_september_total;
+        $daycrewteamstats->calls_total_october = $calls_october_total;
+        $daycrewteamstats->calls_total_november = $calls_november_total;
+        $daycrewteamstats->calls_total_december = $calls_december_total;
+        $daycrewteamstats->calls_total_january = $calls_january_total;
+        $daycrewteamstats->calls_total_february = $calls_february_total;
+        $daycrewteamstats->calls_total_march = $calls_march_total;
+        $daycrewteamstats->calls_total_april = $calls_april_total;
+        $daycrewteamstats->calls_total_may = $calls_may_total;
+        $daycrewteamstats->calls_total_june = $calls_june_total;
         $daycrewteamstats->save();
         $bar->advance();
 
@@ -272,7 +322,7 @@ class ProcessTeamStats extends Command
 
         //Evening Crew One
         $eveningcrewonerawstats = RawStats::where('role_id', '=', 2)->get();
-        foreach ($eveningcrewonerawstats as $rawstats)
+        foreach ($eveningcrewonerawstats as $raw_stats)
         {
             $emails_july += $raw_stats->emails_july;
             $emails_august += $raw_stats->emails_august;
@@ -349,6 +399,55 @@ class ProcessTeamStats extends Command
         }
         $eveningcrewoneteamstats = new TeamStats;
         //save all entries
+        $eveningcrewoneteamstats->role_id = 2;
+        $eveningcrewoneteamstats->emails_july = $emails_july;
+        $eveningcrewoneteamstats->emails_august = $emails_august;
+        $eveningcrewoneteamstats->emails_september = $emails_september;
+        $eveningcrewoneteamstats->emails_october = $emails_october;
+        $eveningcrewoneteamstats->emails_november = $emails_november;
+        $eveningcrewoneteamstats->emails_december = $emails_december;
+        $eveningcrewoneteamstats->emails_january = $emails_january;
+        $eveningcrewoneteamstats->emails_february = $emails_february;
+        $eveningcrewoneteamstats->emails_march = $emails_march;
+        $eveningcrewoneteamstats->emails_april = $emails_april;
+        $eveningcrewoneteamstats->emails_may = $emails_may;
+        $eveningcrewoneteamstats->emails_june = $emails_june;
+        $eveningcrewoneteamstats->calls_inbound_july = $calls_inbound_july;
+        $eveningcrewoneteamstats->calls_inbound_august = $calls_inbound_august;
+        $eveningcrewoneteamstats->calls_inbound_september = $calls_inbound_september;
+        $eveningcrewoneteamstats->calls_inbound_october = $calls_inbound_october;
+        $eveningcrewoneteamstats->calls_inbound_november = $calls_inbound_november;
+        $eveningcrewoneteamstats->calls_inbound_december = $calls_inbound_december;
+        $eveningcrewoneteamstats->calls_inbound_january = $calls_inbound_january;
+        $eveningcrewoneteamstats->calls_inbound_february = $calls_inbound_february;
+        $eveningcrewoneteamstats->calls_inbound_march = $calls_inbound_march;
+        $eveningcrewoneteamstats->calls_inbound_april = $calls_inbound_april;
+        $eveningcrewoneteamstats->calls_inbound_may = $calls_inbound_may;
+        $eveningcrewoneteamstats->calls_inbound_june = $calls_inbound_june;
+        $eveningcrewoneteamstats->calls_outbound_july = $calls_outbound_july;
+        $eveningcrewoneteamstats->calls_outbound_august = $calls_outbound_august;
+        $eveningcrewoneteamstats->calls_outbound_september = $calls_outbound_september;
+        $eveningcrewoneteamstats->calls_outbound_october = $calls_outbound_october;
+        $eveningcrewoneteamstats->calls_outbound_november = $calls_outbound_november;
+        $eveningcrewoneteamstats->calls_outbound_december = $calls_outbound_december;
+        $eveningcrewoneteamstats->calls_outbound_january = $calls_outbound_january;
+        $eveningcrewoneteamstats->calls_outbound_february = $calls_outbound_february;
+        $eveningcrewoneteamstats->calls_outbound_march = $calls_outbound_march;
+        $eveningcrewoneteamstats->calls_outbound_april = $calls_outbound_april;
+        $eveningcrewoneteamstats->calls_outbound_may = $calls_outbound_may;
+        $eveningcrewoneteamstats->calls_outbound_june = $calls_outbound_june;
+        $eveningcrewoneteamstats->calls_total_july = $calls_july_total;
+        $eveningcrewoneteamstats->calls_total_august = $calls_august_total;
+        $eveningcrewoneteamstats->calls_total_september = $calls_september_total;
+        $eveningcrewoneteamstats->calls_total_october = $calls_october_total;
+        $eveningcrewoneteamstats->calls_total_november = $calls_november_total;
+        $eveningcrewoneteamstats->calls_total_december = $calls_december_total;
+        $eveningcrewoneteamstats->calls_total_january = $calls_january_total;
+        $eveningcrewoneteamstats->calls_total_february = $calls_february_total;
+        $eveningcrewoneteamstats->calls_total_march = $calls_march_total;
+        $eveningcrewoneteamstats->calls_total_april = $calls_april_total;
+        $eveningcrewoneteamstats->calls_total_may = $calls_may_total;
+        $eveningcrewoneteamstats->calls_total_june = $calls_june_total;
         $eveningcrewoneteamstats->save();
         $bar->advance();
 
@@ -428,7 +527,7 @@ class ProcessTeamStats extends Command
 
         //Evening Crew Two
         $eveningcrewtworawstats = RawStats::where('role_id', '=', 3)->get();
-        foreach ($eveningcrewtworawstats as $rawstats)
+        foreach ($eveningcrewtworawstats as $raw_stats)
         {
             $emails_july += $raw_stats->emails_july;
             $emails_august += $raw_stats->emails_august;
@@ -505,6 +604,55 @@ class ProcessTeamStats extends Command
         }
         $eveningcrewtwoteamstats = new TeamStats;
         //save all entries
+        $eveningcrewtwoteamstats->role_id = 3;
+        $eveningcrewtwoteamstats->emails_july = $emails_july;
+        $eveningcrewtwoteamstats->emails_august = $emails_august;
+        $eveningcrewtwoteamstats->emails_september = $emails_september;
+        $eveningcrewtwoteamstats->emails_october = $emails_october;
+        $eveningcrewtwoteamstats->emails_november = $emails_november;
+        $eveningcrewtwoteamstats->emails_december = $emails_december;
+        $eveningcrewtwoteamstats->emails_january = $emails_january;
+        $eveningcrewtwoteamstats->emails_february = $emails_february;
+        $eveningcrewtwoteamstats->emails_march = $emails_march;
+        $eveningcrewtwoteamstats->emails_april = $emails_april;
+        $eveningcrewtwoteamstats->emails_may = $emails_may;
+        $eveningcrewtwoteamstats->emails_june = $emails_june;
+        $eveningcrewtwoteamstats->calls_inbound_july = $calls_inbound_july;
+        $eveningcrewtwoteamstats->calls_inbound_august = $calls_inbound_august;
+        $eveningcrewtwoteamstats->calls_inbound_september = $calls_inbound_september;
+        $eveningcrewtwoteamstats->calls_inbound_october = $calls_inbound_october;
+        $eveningcrewtwoteamstats->calls_inbound_november = $calls_inbound_november;
+        $eveningcrewtwoteamstats->calls_inbound_december = $calls_inbound_december;
+        $eveningcrewtwoteamstats->calls_inbound_january = $calls_inbound_january;
+        $eveningcrewtwoteamstats->calls_inbound_february = $calls_inbound_february;
+        $eveningcrewtwoteamstats->calls_inbound_march = $calls_inbound_march;
+        $eveningcrewtwoteamstats->calls_inbound_april = $calls_inbound_april;
+        $eveningcrewtwoteamstats->calls_inbound_may = $calls_inbound_may;
+        $eveningcrewtwoteamstats->calls_inbound_june = $calls_inbound_june;
+        $eveningcrewtwoteamstats->calls_outbound_july = $calls_outbound_july;
+        $eveningcrewtwoteamstats->calls_outbound_august = $calls_outbound_august;
+        $eveningcrewtwoteamstats->calls_outbound_september = $calls_outbound_september;
+        $eveningcrewtwoteamstats->calls_outbound_october = $calls_outbound_october;
+        $eveningcrewtwoteamstats->calls_outbound_november = $calls_outbound_november;
+        $eveningcrewtwoteamstats->calls_outbound_december = $calls_outbound_december;
+        $eveningcrewtwoteamstats->calls_outbound_january = $calls_outbound_january;
+        $eveningcrewtwoteamstats->calls_outbound_february = $calls_outbound_february;
+        $eveningcrewtwoteamstats->calls_outbound_march = $calls_outbound_march;
+        $eveningcrewtwoteamstats->calls_outbound_april = $calls_outbound_april;
+        $eveningcrewtwoteamstats->calls_outbound_may = $calls_outbound_may;
+        $eveningcrewtwoteamstats->calls_outbound_june = $calls_outbound_june;
+        $eveningcrewtwoteamstats->calls_total_july = $calls_july_total;
+        $eveningcrewtwoteamstats->calls_total_august = $calls_august_total;
+        $eveningcrewtwoteamstats->calls_total_september = $calls_september_total;
+        $eveningcrewtwoteamstats->calls_total_october = $calls_october_total;
+        $eveningcrewtwoteamstats->calls_total_november = $calls_november_total;
+        $eveningcrewtwoteamstats->calls_total_december = $calls_december_total;
+        $eveningcrewtwoteamstats->calls_total_january = $calls_january_total;
+        $eveningcrewtwoteamstats->calls_total_february = $calls_february_total;
+        $eveningcrewtwoteamstats->calls_total_march = $calls_march_total;
+        $eveningcrewtwoteamstats->calls_total_april = $calls_april_total;
+        $eveningcrewtwoteamstats->calls_total_may = $calls_may_total;
+        $eveningcrewtwoteamstats->calls_total_june = $calls_june_total;
         $eveningcrewtwoteamstats->save();
         $bar->advance();
 
@@ -584,7 +732,7 @@ class ProcessTeamStats extends Command
 
         //Nightwalkers
         $nightwalkerrawstats = RawStats::where('role_id', '=', 4)->get();
-        foreach ($nightwalkerrawstats as $rawstats)
+        foreach ($nightwalkerrawstats as $raw_stats)
         {
             $emails_july += $raw_stats->emails_july;
             $emails_august += $raw_stats->emails_august;
@@ -661,10 +809,164 @@ class ProcessTeamStats extends Command
         }
         $nightwalkerteamstats = new TeamStats;
         //save all entries
+        $nightwalkerteamstats->role_id = 4;
+        $nightwalkerteamstats->emails_july = $emails_july;
+        $nightwalkerteamstats->emails_august = $emails_august;
+        $nightwalkerteamstats->emails_september = $emails_september;
+        $nightwalkerteamstats->emails_october = $emails_october;
+        $nightwalkerteamstats->emails_november = $emails_november;
+        $nightwalkerteamstats->emails_december = $emails_december;
+        $nightwalkerteamstats->emails_january = $emails_january;
+        $nightwalkerteamstats->emails_february = $emails_february;
+        $nightwalkerteamstats->emails_march = $emails_march;
+        $nightwalkerteamstats->emails_april = $emails_april;
+        $nightwalkerteamstats->emails_may = $emails_may;
+        $nightwalkerteamstats->emails_june = $emails_june;
+        $nightwalkerteamstats->calls_inbound_july = $calls_inbound_july;
+        $nightwalkerteamstats->calls_inbound_august = $calls_inbound_august;
+        $nightwalkerteamstats->calls_inbound_september = $calls_inbound_september;
+        $nightwalkerteamstats->calls_inbound_october = $calls_inbound_october;
+        $nightwalkerteamstats->calls_inbound_november = $calls_inbound_november;
+        $nightwalkerteamstats->calls_inbound_december = $calls_inbound_december;
+        $nightwalkerteamstats->calls_inbound_january = $calls_inbound_january;
+        $nightwalkerteamstats->calls_inbound_february = $calls_inbound_february;
+        $nightwalkerteamstats->calls_inbound_march = $calls_inbound_march;
+        $nightwalkerteamstats->calls_inbound_april = $calls_inbound_april;
+        $nightwalkerteamstats->calls_inbound_may = $calls_inbound_may;
+        $nightwalkerteamstats->calls_inbound_june = $calls_inbound_june;
+        $nightwalkerteamstats->calls_outbound_july = $calls_outbound_july;
+        $nightwalkerteamstats->calls_outbound_august = $calls_outbound_august;
+        $nightwalkerteamstats->calls_outbound_september = $calls_outbound_september;
+        $nightwalkerteamstats->calls_outbound_october = $calls_outbound_october;
+        $nightwalkerteamstats->calls_outbound_november = $calls_outbound_november;
+        $nightwalkerteamstats->calls_outbound_december = $calls_outbound_december;
+        $nightwalkerteamstats->calls_outbound_january = $calls_outbound_january;
+        $nightwalkerteamstats->calls_outbound_february = $calls_outbound_february;
+        $nightwalkerteamstats->calls_outbound_march = $calls_outbound_march;
+        $nightwalkerteamstats->calls_outbound_april = $calls_outbound_april;
+        $nightwalkerteamstats->calls_outbound_may = $calls_outbound_may;
+        $nightwalkerteamstats->calls_outbound_june = $calls_outbound_june;
+        $nightwalkerteamstats->calls_total_july = $calls_july_total;
+        $nightwalkerteamstats->calls_total_august = $calls_august_total;
+        $nightwalkerteamstats->calls_total_september = $calls_september_total;
+        $nightwalkerteamstats->calls_total_october = $calls_october_total;
+        $nightwalkerteamstats->calls_total_november = $calls_november_total;
+        $nightwalkerteamstats->calls_total_december = $calls_december_total;
+        $nightwalkerteamstats->calls_total_january = $calls_january_total;
+        $nightwalkerteamstats->calls_total_february = $calls_february_total;
+        $nightwalkerteamstats->calls_total_march = $calls_march_total;
+        $nightwalkerteamstats->calls_total_april = $calls_april_total;
+        $nightwalkerteamstats->calls_total_may = $calls_may_total;
+        $nightwalkerteamstats->calls_total_june = $calls_june_total;
         $nightwalkerteamstats->save();
         $bar->advance();
 
         $bar->finish();
         $this->info(' Completed!');
+
+        $all_team_stats = TeamStats::all();
+        $bar = $this->output->createProgressBar(count($all_team_stats));
+
+        foreach ($all_team_stats as $team_stats)
+        {
+            $emails_july = $team_stats->emails_july;
+            $emails_august = $team_stats->emails_august;
+            $emails_september = $team_stats->emails_september;
+            $emails_october = $team_stats->emails_october;
+            $emails_november = $team_stats->emails_november;
+            $emails_december = $team_stats->emails_december;
+            $emails_january = $team_stats->emails_january;
+            $emails_february = $team_stats->emails_february;
+            $emails_march = $team_stats->emails_march;
+            $emails_april = $team_stats->emails_april;
+            $emails_may = $team_stats->emails_may;
+            $emails_june = $team_stats->emails_june;
+            $calls_inbound_july = $team_stats->calls_inbound_july;
+            $calls_inbound_august = $team_stats->calls_inbound_august;
+            $calls_inbound_september = $team_stats->calls_inbound_september;
+            $calls_inbound_october = $team_stats->calls_inbound_october;
+            $calls_inbound_november = $team_stats->calls_inbound_november;
+            $calls_inbound_december = $team_stats->calls_inbound_december;
+            $calls_inbound_january = $team_stats->calls_inbound_january;
+            $calls_inbound_february = $team_stats->calls_inbound_february;
+            $calls_inbound_march = $team_stats->calls_inbound_march;
+            $calls_inbound_april = $team_stats->calls_inbound_april;
+            $calls_inbound_may = $team_stats->calls_inbound_may;
+            $calls_inbound_june = $team_stats->calls_inbound_june;
+            $calls_outbound_july = $team_stats->calls_outbound_july;
+            $calls_outbound_august = $team_stats->calls_outbound_august;
+            $calls_outbound_september = $team_stats->calls_outbound_september;
+            $calls_outbound_october = $team_stats->calls_outbound_october;
+            $calls_outbound_november = $team_stats->calls_outbound_november;
+            $calls_outbound_december = $team_stats->calls_outbound_december;
+            $calls_outbound_january = $team_stats->calls_outbound_january;
+            $calls_outbound_february = $team_stats->calls_outbound_february;
+            $calls_outbound_march = $team_stats->calls_outbound_march;
+            $calls_outbound_april = $team_stats->calls_outbound_april;
+            $calls_outbound_may = $team_stats->calls_outbound_may;
+            $calls_outbound_june = $team_stats->calls_outbound_june;
+            $calls_january_total = $team_stats->calls_total_january;
+            $calls_february_total = $team_stats->calls_total_february;
+            $calls_march_total = $team_stats->calls_total_march;
+            $calls_april_total = $team_stats->calls_total_april;
+            $calls_may_total = $team_stats->calls_total_may;
+            $calls_june_total = $team_stats->calls_total_june;
+            $calls_july_total = $team_stats->calls_total_july;
+            $calls_august_total = $team_stats->calls_total_august;
+            $calls_september_total = $team_stats->calls_total_september;
+            $calls_october_total = $team_stats->calls_total_october;
+            $calls_november_total = $team_stats->calls_total_november;
+            $calls_december_total = $team_stats->calls_total_december;
+
+            //Total emails
+            $total_emails = $emails_july + $emails_august + $emails_september + $emails_october + $emails_november + $emails_december + $emails_january + $emails_february + $emails_march + $emails_april + $emails_may + $emails_june;
+
+            //Total calls inbound
+            $total_calls_inbound = $calls_inbound_july + $calls_inbound_august + $calls_inbound_september + $calls_inbound_october + $calls_inbound_november + $calls_inbound_december + $calls_inbound_january + $calls_inbound_february + $calls_inbound_march + $calls_inbound_april + $calls_inbound_may + $calls_inbound_june;
+
+            //Total calls outbound
+            $total_calls_outbound = $calls_outbound_july + $calls_outbound_august + $calls_outbound_september + $calls_outbound_october + $calls_outbound_november + $calls_outbound_december + $calls_outbound_january + $calls_outbound_february + $calls_outbound_march + $calls_outbound_april + $calls_outbound_may + $calls_outbound_june;
+
+            $best_email_month_array = array('January' => $emails_january, 'February' => $emails_february, 'March' => $emails_march, 'April' => $emails_april, 'May' => $emails_may, 'June' => $emails_june, 'July' => $emails_july, 'August' => $emails_august, 'September' => $emails_september, 'October' => $emails_october, 'November' => $emails_november, 'December' => $emails_december);
+            arsort($best_email_month_array);
+            $best_email_month = key($best_email_month_array);
+
+            $email_q1 = $emails_july + $emails_august + $emails_september;
+            $email_q2 = $emails_october + $emails_november + $emails_december;
+            $email_q3 = $emails_january + $emails_february + $emails_march;
+            $email_q4 = $emails_april + $emails_may + $emails_june;
+
+            $best_email_quarter_array = array('Quarter 1' => $email_q1, 'Quarter 2' => $email_q2, 'Quarter 3' => $email_q3, 'Quarter 4' => $email_q4);
+            arsort($best_email_quarter_array);
+            $best_email_quarter = key($best_email_quarter_array);
+
+            $best_call_month_array = array('January' => $calls_january_total, 'February' => $calls_february_total, 'March' => $calls_march_total, 'April' => $calls_april_total, 'May' => $calls_may_total, 'June' => $calls_june_total, 'July' => $calls_july_total, 'August' => $calls_august_total, 'September' => $calls_september_total, 'October' => $calls_october_total, 'November' => $calls_november_total, 'December' => $calls_december_total);
+            arsort($best_call_month_array);
+            $best_call_month = key($best_call_month_array);
+
+            $calls_q1 = $calls_july_total + $calls_august_total + $calls_september_total;
+            $calls_q2 = $calls_october_total + $calls_november_total + $calls_december_total;
+            $calls_q3 = $calls_january_total + $calls_february_total + $calls_march_total;
+            $calls_q4 = $calls_april_total + $calls_may_total + $calls_june_total;
+
+            $best_call_quarter_array = array('Quarter 1' => $calls_q1, 'Quarter 2' => $calls_q2, 'Quarter 3' => $calls_q3, 'Quarter 4' => $calls_q4);
+            arsort($best_call_quarter_array);
+            $best_call_quarter = key($best_call_quarter_array);
+
+            $processed_stats = TeamStats::find($team_stats->id);
+            $processed_stats->emails = $total_emails;
+            $processed_stats->calls_inbound = $total_calls_inbound;
+            $processed_stats->calls_outbound = $total_calls_outbound;
+            $processed_stats->best_email_month = $best_email_month;
+            $processed_stats->best_email_quarter = $best_email_quarter;
+            $processed_stats->best_call_month = $best_call_month;
+            $processed_stats->best_call_quarter = $best_call_quarter;
+            $processed_stats->save();
+
+            $bar->advance();
+        }
+
+        $bar->finish();
+        $this->info(' Best email/call months and quarters calculated.');
     }
 }

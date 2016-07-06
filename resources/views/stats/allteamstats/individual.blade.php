@@ -151,7 +151,7 @@
     labels: ['Your Emails', 'All Emails'],
     datasets: [
       {
-        data: [{{ $user->processedstats->emails }}, {{ $cumulativestats->emails }}],
+        data: [{{ $user->processedstats->emails }}, {{ $cumulative->emails }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -168,7 +168,7 @@
     labels: ['Your Calls', 'All Calls'],
     datasets: [
       {
-        data: [{{ $user->processedstats->calls_inbound }}, {{ $cumulativestats->calls }}],
+        data: [{{ $user->processedstats->calls_inbound }}, {{ $cumulative->calls }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -190,7 +190,7 @@
                 borderColor : '#da8c10',
                 pointBackgroundColor : '#F39C12',
                 pointBorderColor : '#da8c10',
-              data: [{{ $user->rawstats->emails_july }}, {{ $user->rawstats->emails_august }}, {{ $user->rawstats->emails_september }}, {{ $user->rawstats->emails_october }}, {{ $user->rawstats->emails_november }}, {{ $user->rawstats->emails_december }}, {{ $user->rawstats->emails_january }}, {{ $user->rawstats->emails_february }}, {{ $user->rawstats->emails_march }}, {{ $user->rawstats->emails_april }}, 600, 600]
+              data: [{{ $user->rawstats->emails_july }}, {{ $user->rawstats->emails_august }}, {{ $user->rawstats->emails_september }}, {{ $user->rawstats->emails_october }}, {{ $user->rawstats->emails_november }}, {{ $user->rawstats->emails_december }}, {{ $user->rawstats->emails_january }}, {{ $user->rawstats->emails_february }}, {{ $user->rawstats->emails_march }}, {{ $user->rawstats->emails_april }}, {{ $user->rawstats->emails_may }}, {{ $user->rawstats->emails_june }}]
           },
           {
               label: 'Calls',
@@ -198,7 +198,7 @@
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
-              data: [{{ $user->rawstats->calls_inbound_july }}, {{ $user->rawstats->calls_inbound_august }}, {{ $user->rawstats->calls_inbound_september }}, {{ $user->rawstats->calls_inbound_october }}, {{ $user->rawstats->calls_inbound_november }}, {{ $user->rawstats->calls_inbound_december }}, {{ $user->rawstats->calls_inbound_january }}, {{ $user->rawstats->calls_inbound_february }}, {{ $user->rawstats->calls_inbound_march }}, {{ $user->rawstats->calls_inbound_april }}, 170, 170]
+              data: [{{ $user->rawstats->calls_inbound_july }}, {{ $user->rawstats->calls_inbound_august }}, {{ $user->rawstats->calls_inbound_september }}, {{ $user->rawstats->calls_inbound_october }}, {{ $user->rawstats->calls_inbound_november }}, {{ $user->rawstats->calls_inbound_december }}, {{ $user->rawstats->calls_inbound_january }}, {{ $user->rawstats->calls_inbound_february }}, {{ $user->rawstats->calls_inbound_march }}, {{ $user->rawstats->calls_inbound_april }}, {{ $user->rawstats->calls_inbound_may }}, {{ $user->rawstats->calls_inbound_june }}]
           }
       ]
   };

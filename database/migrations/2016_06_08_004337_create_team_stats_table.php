@@ -51,6 +51,18 @@ class CreateTeamStatsTable extends Migration
             $table->integer('calls_outbound_april');
             $table->integer('calls_outbound_may');
             $table->integer('calls_outbound_june');
+            $table->integer('calls_total_july');
+            $table->integer('calls_total_august');
+            $table->integer('calls_total_september');
+            $table->integer('calls_total_october');
+            $table->integer('calls_total_november');
+            $table->integer('calls_total_december');
+            $table->integer('calls_total_january');
+            $table->integer('calls_total_february');
+            $table->integer('calls_total_march');
+            $table->integer('calls_total_april');
+            $table->integer('calls_total_may');
+            $table->integer('calls_total_june');
             $table->decimal('output_july', 11, 2);
             $table->decimal('output_august', 11, 2);
             $table->decimal('output_september', 11, 2);
@@ -88,6 +100,7 @@ class CreateTeamStatsTable extends Migration
             $table->string('best_quality_month');
             $table->string('best_quality_quarter');
             $table->timestamps();
+        });
     }
 
     /**

@@ -46,26 +46,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<!--
-BODY TAG OPTIONS:
-=================
-Apply one or more of the following classes to get the
-desired effect
-|---------------------------------------------------------|
-| SKINS         | skin-blue                               |
-|               | skin-black                              |
-|               | skin-purple                             |
-|               | skin-yellow                             |
-|               | skin-red                                |
-|               | skin-green                              |
-|---------------------------------------------------------|
-|LAYOUT OPTIONS | fixed                                   |
-|               | layout-boxed                            |
-|               | layout-top-nav                          |
-|               | sidebar-collapse                        |
-|               | sidebar-mini                            |
-|---------------------------------------------------------|
--->
 <body @if(Auth::user()->sidebar_min == 0) class="hold-transition skin-yellow sidebar-mini" @else class="hold-transition skin-yellow sidebar-mini sidebar-collapse" @endif>
 <div class="wrapper">
 
@@ -131,8 +111,12 @@ desired effect
         <li class="header">Menu</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="home"><a href="{{ url('/') }}"><i class="fa fa-home"></i> <span>Home</span></a></li>
-        <li class="mystats"><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
-        <li class="teamstats"><a href="{{ url('/teamstats') }}"><i class="fa fa-users"></i> <span>Team Stats</span></a></li>
+        @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 2 || Auth::user()->role_id == 3 || Auth::user()->role_id == 4)
+          <li class="mystats"><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
+        @endif
+        @if (Auth::user()->role_id != 9 || Auth::user()->role_id != 9 || 10)
+          <li class="teamstats"><a href="{{ url('/teamstats') }}"><i class="fa fa-users"></i> <span>Team Stats</span></a></li>
+        @endif
         @if (Auth::user()->role_id > 8 || Auth::user()->role_id == 7)
           <li class="allteamstats"><a href="{{ url('/allteamstats') }}"><i class="fa fa-users"></i> <span>All Team Stats</span></a></li>
         @endif

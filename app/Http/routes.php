@@ -26,9 +26,9 @@ Route::get('/mystats', 'StatsController@mystats');
 Route::get('/teamstats', 'StatsController@teamstats');
 
 //Manager routes
-Route::get('/allteamstats', 'StatsController@allteamstats');
-Route::get('/allteamstats/{team}', 'StatsController@allteamdirectory');
-Route::get('/allteamstats/{team}/{id}', 'StatsController@viewstats');
+Route::get('/allteamstats', 'ManagerStatsController@allteamstats');
+Route::get('/allteamstats/{team}', 'ManagerStatsController@allteamdirectory');
+Route::get('/allteamstats/{team}/{id}', 'ManagerStatsController@viewstats');
 
 //Sidebar change state
 Route::post('/sidebar/changestate', function() {

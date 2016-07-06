@@ -13,7 +13,7 @@ class RawStatsSeeder extends Seeder
     public function run()
     {
         //Balthazar 5103703
-        RawStats::create([
+        /*RawStats::create([
         	'user_id' => 3,
             'role_id' => 1,
         	'emails_july' => 1599,
@@ -63,7 +63,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.62,
             'output_april' => 12.61,
             'output_may' => 12.75,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 87.3,
             'quality_august' => 92.6,
             'quality_september' => 90.0,
@@ -75,7 +75,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 81.3,
             'quality_april' => 87.33,
             'quality_may' => 91.1,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Blair 5103705
@@ -129,7 +129,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 17.18,
             'output_april' => 11.78,
             'output_may' => 18.15,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 88.3,
             'quality_august' => 90.3,
             'quality_september' => 92.4,
@@ -141,7 +141,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 92.4,
             'quality_april' => 92.4,
             'quality_may' => 92.4,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Alison 5103707
@@ -195,7 +195,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.81,
             'output_april' => 12.08,
             'output_may' => 12.2,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 84.4,
             'quality_august' => 92.6,
             'quality_september' => 92.0,
@@ -207,7 +207,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 87.8,
             'quality_april' => 89.53,
             'quality_may' => 89.0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Hannah 5103712
@@ -261,7 +261,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 8.64,
             'output_april' => 9.47,
             'output_may' => 9.97,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 87.5,
             'quality_august' => 90.6,
             'quality_september' => 90.3,
@@ -273,7 +273,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 89.8,
             'quality_april' => 89.82,
             'quality_may' => 89.8,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Shara 4600683
@@ -327,7 +327,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.33,
             'output_april' => 11.92,
             'output_may' => 12.81,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 91.5,
             'quality_august' => 92.4,
             'quality_september' => 89.4,
@@ -339,7 +339,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 90.7,
             'quality_april' => 90.66,
             'quality_may' => 90.7,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Ella 	4955997
@@ -393,7 +393,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.3,
             'output_april' => 10.16,
             'output_may' => 9.55,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 96.1,
             'quality_august' => 93.2,
             'quality_september' => 93.3,
@@ -405,7 +405,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 95.8,
             'quality_april' => 95.79,
             'quality_may' => 95.8,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         
         //Ally 5419220
@@ -458,8 +458,8 @@ class RawStatsSeeder extends Seeder
             'output_february' => 14.16,
             'output_march' => 11.99,
             'output_april' => 9.04,
-            'output_may' => 10.08,
-            'output_june' => 11,
+            'output_may' => xxx,
+            'output_june' => 10.08,
             'quality_july' => 88.0,
             'quality_august' => 88.0,
             'quality_september' => 86.8,
@@ -471,7 +471,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 91.4,
             'quality_april' => 91.24,
             'quality_may' => 92.1,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Emma 4886054
@@ -525,7 +525,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 10.02,
             'output_april' => 8.61,
             'output_may' => 9.46,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 84.7,
             'quality_august' => 92.5,
             'quality_september' => 89.4,
@@ -537,7 +537,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 85.4,
             'quality_april' => 86.06,
             'quality_may' => 86,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         
         //Abe 4886057
@@ -591,7 +591,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 9.48,
             'output_april' => 14.12,
             'output_may' => 12.73,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 86.2,
             'quality_august' => 85.4,
             'quality_september' => 85.4,
@@ -603,7 +603,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 86.8,
             'quality_april' => 89.13,
             'quality_may' => 86.7,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Bobbi 4327586
@@ -657,7 +657,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.33,
             'output_april' => 11.78,
             'output_may' => 12.34,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 78.7,
             'quality_august' => 76.3,
             'quality_september' => 77.5,
@@ -669,7 +669,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 78.2,
             'quality_april' => 79.36,
             'quality_may' => 81.0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Clare 5419221
@@ -723,7 +723,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.09,
             'output_april' => 10.54,
             'output_may' => 10.89,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 85.2,
             'quality_august' => 86.7,
             'quality_september' => 85.7,
@@ -735,7 +735,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 85.7,
             'quality_april' => 91.45,
             'quality_may' => 90.4,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Linda 4672152
@@ -789,7 +789,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 13.01,
             'output_april' => 10.88,
             'output_may' => 10.67,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 78.9,
             'quality_august' => 81.4,
             'quality_september' => 84.5,
@@ -801,7 +801,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 84,
             'quality_april' => 86.3,
             'quality_may' => 88.6,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Max 4794122
@@ -855,7 +855,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.82,
             'output_april' => 14.54,
             'output_may' => 8.3,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 83.1,
             'quality_august' => 80.8,
             'quality_september' => 86.0,
@@ -867,7 +867,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 88.9,
             'quality_april' => 87.18,
             'quality_may' => 87.8,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Alex S 4956002
@@ -921,7 +921,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.13,
             'output_april' => 10.16,
             'output_may' => 10.87,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 85.8,
             'quality_august' => 87.3,
             'quality_september' => 87.5,
@@ -933,7 +933,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 86.2,
             'quality_april' => 90.15,
             'quality_may' => 91.7,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Sam 5753549
@@ -987,7 +987,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 5.47,
             'output_april' => 8.11,
             'output_may' => 9.15,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -999,7 +999,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 88.9,
             'quality_april' => 91.41,
             'quality_may' => 93.0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Byron 5753546
@@ -1053,7 +1053,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 4.93,
             'output_april' => 6.09,
             'output_may' => 8.46,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -1065,7 +1065,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 91.4,
             'quality_april' => 91.0,
             'quality_may' => 91.0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Kate 5753548
@@ -1119,7 +1119,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 4.84,
             'output_april' => 8.18,
             'output_may' => 9.95,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -1131,7 +1131,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 85.5,
             'quality_april' => 88.4,
             'quality_may' => 90.1,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Mahana 5337572
@@ -1185,7 +1185,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.25,
             'output_april' => 12.52,
             'output_may' => 12.52,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 89.7,
             'quality_august' => 93.3,
             'quality_september' => 95.7,
@@ -1197,7 +1197,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 93.5,
             'quality_april' => 91.98,
             'quality_may' => 91.98,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Alex M 5259070
@@ -1228,18 +1228,18 @@ class RawStatsSeeder extends Seeder
         	'calls_inbound_april' => 0,
         	'calls_inbound_may' => 30,
         	'calls_inbound_june' => 81,
-			'calls_outbound_july' => 0,
-        	'calls_outbound_august' => 0,
-        	'calls_outbound_september' => 0,
-        	'calls_outbound_october' => 0,
-        	'calls_outbound_november' => 0,
-        	'calls_outbound_december' => 0,
-        	'calls_outbound_january' => 0,
-        	'calls_outbound_february' => 0,
-        	'calls_outbound_march' => 0,
-        	'calls_outbound_april' => 0,
-        	'calls_outbound_may' => 10,
-        	'calls_outbound_june' => 10,
+			'calls_outbound_july' => xxx,
+        	'calls_outbound_august' => xxx,
+        	'calls_outbound_september' => xxx,
+        	'calls_outbound_october' => xxx,
+        	'calls_outbound_november' => xxx,
+        	'calls_outbound_december' => xxx,
+        	'calls_outbound_january' => xxx,
+        	'calls_outbound_february' => xxx,
+        	'calls_outbound_march' => xxx,
+        	'calls_outbound_april' => xxx,
+        	'calls_outbound_may' => xxx,
+        	'calls_outbound_june' => xxx,
         	'output_july' => 0,
             'output_august' => 0,
             'output_september' => 0,
@@ -1251,7 +1251,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 0,
             'output_april' => 0,
             'output_may' => 0,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -1263,7 +1263,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 0,
             'quality_april' => 0,
             'quality_may' => 0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Liz 4481520
@@ -1383,7 +1383,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 16.9,
             'output_april' => 10.65,
             'output_may' => 11.28,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 82.5,
             'quality_august' => 87.9,
             'quality_september' => 88.4,
@@ -1395,7 +1395,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 84.9,
             'quality_april' => 86.95,
             'quality_may' => 85.8,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Gareth 4860223
@@ -1449,7 +1449,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 15.67,
             'output_april' => 13.31,
             'output_may' => 15.3,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 85.5,
             'quality_august' => 80.7,
             'quality_september' => 80.8,
@@ -1461,7 +1461,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 90.7,
             'quality_april' => 88.88,
             'quality_may' => 90.3,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Levi 5337688
@@ -1515,7 +1515,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 12.16,
             'output_april' => 11.04,
             'output_may' => 11.34,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 83.8,
             'quality_august' => 84.6,
             'quality_september' => 85.0,
@@ -1527,8 +1527,8 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 90.8,
             'quality_april' => 90.75,
             'quality_may' => 90.6,
-            'quality_june' => 85.0,
-        	]);
+            'quality_june' => xxx,
+        	]);*/
         	
         //Alicia 5337563
         RawStats::create([
@@ -1597,7 +1597,7 @@ class RawStatsSeeder extends Seeder
         	]);
         	
         //Jason 4672122
-        RawStats::create([
+        /*RawStats::create([
         	'user_id' => 29,
             'role_id' => 3,
         	'emails_july' => 753,
@@ -1647,7 +1647,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.02,
             'output_april' => 10.95,
             'output_may' => 10.55,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 76.0,
             'quality_august' => 76.0,
             'quality_september' => 79.6,
@@ -1659,7 +1659,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 79.8,
             'quality_april' => 85.46,
             'quality_may' => 81.9,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Toby 4011436
@@ -1779,7 +1779,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 10.42,
             'output_april' => 10.87,
             'output_may' => 11.43,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 92.1,
             'quality_august' => 90.5,
             'quality_september' => 89.5,
@@ -1791,7 +1791,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 94.1,
             'quality_april' => 94.07,
             'quality_may' => 94.1,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Frankie 5840548
@@ -1845,7 +1845,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 0,
             'output_april' => 0,
             'output_may' => 0,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -1857,7 +1857,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 0,
             'quality_april' => 0,
             'quality_may' => 0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Megan 5840547
@@ -1911,7 +1911,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 0,
             'output_april' => 0,
             'output_may' => 0,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -1923,7 +1923,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 0,
             'quality_april' => 0,
             'quality_may' => 0,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Vicky 4886056
@@ -1954,18 +1954,18 @@ class RawStatsSeeder extends Seeder
         	'calls_inbound_april' => 5,
         	'calls_inbound_may' => 43,
         	'calls_inbound_june' => 52,
-			'calls_outbound_july' => 0,
-        	'calls_outbound_august' => 0,
-        	'calls_outbound_september' => 0,
-        	'calls_outbound_october' => 0,
-        	'calls_outbound_november' => 0,
-        	'calls_outbound_december' => 0,
-        	'calls_outbound_january' => 0,
-        	'calls_outbound_february' => 0,
-        	'calls_outbound_march' => 5,
-        	'calls_outbound_april' => 5,
-        	'calls_outbound_may' => 5,
-        	'calls_outbound_june' => 5,
+			'calls_outbound_july' => xxx,
+        	'calls_outbound_august' => xxx,
+        	'calls_outbound_september' => xxx,
+        	'calls_outbound_october' => xxx,
+        	'calls_outbound_november' => xxx,
+        	'calls_outbound_december' => xxx,
+        	'calls_outbound_january' => xxx,
+        	'calls_outbound_february' => xxx,
+        	'calls_outbound_march' => xxx,
+        	'calls_outbound_april' => xxx,
+        	'calls_outbound_may' => xxx,
+        	'calls_outbound_june' => xxx,
         	'output_july' => 0,
             'output_august' => 0,
             'output_september' => 0,
@@ -1977,7 +1977,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 0,
             'output_april' => 0,
             'output_may' => 9.13,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -1989,7 +1989,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 0,
             'quality_april' => 0,
             'quality_may' => 85.9,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Wiremu 4794119
@@ -2043,7 +2043,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.91,
             'output_april' => 11.66,
             'output_may' => 12.73,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 82.2,
             'quality_august' => 82.2,
             'quality_september' => 79.6,
@@ -2055,7 +2055,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 87.7,
             'quality_april' => 89.44,
             'quality_may' => 87.9,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Marissa-Anne 	4481528
@@ -2109,7 +2109,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 14.18,
             'output_april' => 12.38,
             'output_may' => 13.05,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 91.6,
             'quality_august' => 94.0,
             'quality_september' => 90.4,
@@ -2121,7 +2121,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 89.9,
             'quality_april' => 90.21,
             'quality_may' => 90.2,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Alepi 3692376
@@ -2175,7 +2175,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 17.04,
             'output_april' => 12.03,
             'output_may' => 12.66,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 82.9,
             'quality_august' => 85.5,
             'quality_september' => 90.6,
@@ -2187,7 +2187,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 92.6,
             'quality_april' => 91.06,
             'quality_may' => 93.64,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Jasmine 5505254
@@ -2241,7 +2241,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.29,
             'output_april' => 11.64,
             'output_may' => 11.22,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -2253,7 +2253,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 88.9,
             'quality_april' => 92.15,
             'quality_may' => 92.9,
-            'quality_june' => 85.0,
+            'quality_june' => xxx,
         	]);
         	
         //Ra 5505255
@@ -2307,7 +2307,7 @@ class RawStatsSeeder extends Seeder
             'output_march' => 11.56,
             'output_april' => 12.2,
             'output_may' => 14.83,
-            'output_june' => 11, 
+            'output_june' => xxx,
             'quality_july' => 0,
             'quality_august' => 0,
             'quality_september' => 0,
@@ -2319,7 +2319,7 @@ class RawStatsSeeder extends Seeder
             'quality_march' => 82.2,
             'quality_april' => 87.93,
             'quality_may' => 93.1,
-            'quality_june' => 85.0,
-        	]);
+            'quality_june' => xxx,
+        	]);*/
     }
 }

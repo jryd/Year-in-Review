@@ -88,20 +88,49 @@ Home
 				<li>
 					<!-- timeline icon -->
 					<i class="fa fa-user bg-yellow"></i>
-					<div class="timeline-item">
+					@if (Auth::user()->role_id < 5)
+						<div class="timeline-item">
 
-						<h3 class="timeline-header">How did you fit in?</h3>
+							<h3 class="timeline-header">How did you fit in?</h3>
 
-						<div class="timeline-body">
-							We each play a part in the bigger picture, Rome wasn't built in a day and nor was it built by one man.
+							<div class="timeline-body">
+								We each play a part in the bigger picture, Rome wasn't built in a day and nor was it built by one man.
+							</div>
+							
+							<div class="timeline-footer">
+								<a class="btn btn-primary btn-xs" href="{{ url('/mystats') }}">Have a look at what you did</a>
+							</div>
+
 						</div>
-						
-						<div class="timeline-footer">
-							<a class="btn btn-primary btn-xs" href="{{ url('/mystats') }}">Have a look at what you did</a>
-						</div>
+					@elseif (Auth::user()->role_id > 4 && Auth::user()->role_id < 9)
+						<div class="timeline-item">
 
-					</div>
-					
+							<h3 class="timeline-header">How did you fit in?</h3>
+
+							<div class="timeline-body">
+								We each play a part in the bigger picture, Rome wasn't built in a day and nor was it built by one man.
+							</div>
+							
+							<div class="timeline-footer">
+								<a class="btn btn-primary btn-xs" href="{{ url('/teamstats') }}">Have a look at what your team did</a>
+							</div>
+
+						</div>
+					@else
+						<div class="timeline-item">
+
+							<h3 class="timeline-header">How did you fit in?</h3>
+
+							<div class="timeline-body">
+								We each play a part in the bigger picture, Rome wasn't built in a day and nor was it built by one man.
+							</div>
+							
+							<div class="timeline-footer">
+								<a class="btn btn-primary btn-xs" href="{{ url('/allteamstats') }}">Have a look at what our staff and teams did</a>
+							</div>
+
+						</div>
+					@endif
 				</li>
 				
 				<!-- END timeline item -->

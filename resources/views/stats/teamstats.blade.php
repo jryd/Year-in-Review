@@ -41,7 +41,7 @@ Team Stats
           <span class="info-box-icon"><i class="ion ion-ios-email-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Team Emails</span>
-            <span class="info-box-number">x,xxx</span>
+            <span class="info-box-number">{{ number_format($team->emails) }}</span>
           <!-- /.info-box-content -->
           </div>
         <!-- /.info-box -->
@@ -51,7 +51,7 @@ Team Stats
           <span class="info-box-icon"><i class="ion ion-ios-telephone-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Team Calls</span>
-            <span class="info-box-number">xx,xxx</span>
+            <span class="info-box-number">{{ number_format($team->calls_inbound + $team->calls_outbound) }}</span>
     			</div>
           <!-- /.info-box-content -->
         </div>
@@ -132,7 +132,7 @@ Team Stats
     labels: ['Emails', 'Calls'],
     datasets: [
       {
-        data: [90, 20],
+        data: [{{ $team->emails }}, {{ $team->calls_inbound + $team->calls_outbound }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -149,7 +149,7 @@ Team Stats
     labels: ['Your Emails', 'All Emails'],
     datasets: [
       {
-        data: [5, 90],
+        data: [{{ $team->emails }}, {{ $cumulative->emails }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -166,7 +166,7 @@ Team Stats
     labels: ['Your Calls', 'All Calls'],
     datasets: [
       {
-        data: [7, 85],
+        data: [{{ $team->calls_inbound + $team->calls_outbound }}, {{ $cumulative->calls }}],
         backgroundColor: [
           "#FF6384",
           "#36A2EB"
@@ -188,7 +188,7 @@ Team Stats
                 borderColor : '#da8c10',
                 pointBackgroundColor : '#F39C12',
                 pointBorderColor : '#da8c10',
-              data: [598, 603, 761, 870, 1227, 860, 1086, 1107, 605, 800, 600, 600]
+              data: [{{ $team->emails_july }}, {{ $team->emails_august }}, {{ $team->emails_september }}, {{ $team->emails_october }}, {{ $team->emails_november }}, {{ $team->emails_december }}, {{ $team->emails_january }}, {{ $team->emails_february }}, {{ $team->emails_march }}, {{ $team->emails_april }}, {{ $team->emails_may }}, {{ $team->emails_june }}]
           },
           {
               label: 'Calls',
@@ -196,7 +196,7 @@ Team Stats
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
-              data: [309, 192, 131, 127, 346, 285, 379, 322, 130, 204, 170, 170]
+              data: [{{ $team->calls_inbound_july }}, {{ $team->calls_inbound_august }}, {{ $team->calls_inbound_september }}, {{ $team->calls_inbound_october }}, {{ $team->calls_inbound_november }}, {{ $team->calls_inbound_december }}, {{ $team->calls_inbound_january }}, {{ $team->calls_inbound_february }}, {{ $team->calls_inbound_march }}, {{ $team->calls_inbound_april }}, {{ $team->calls_inbound_may }}, {{ $team->calls_inbound_june }}]
           }
       ]
   };

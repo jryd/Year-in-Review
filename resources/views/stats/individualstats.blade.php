@@ -17,25 +17,25 @@ Your stats
 @section('content')
     <!-- Your Page Content Here -->
 	  <div class="row">
-		<div class="col-md-8">
-			<div class="box box-warning">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Emails and Calls over the year</h3>
-        
-                  <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+  		<div class="col-md-8">
+  			<div class="box box-warning">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Emails and Calls over the year</h3>
+          
+                    <div class="box-tools pull-right">
+                      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                      <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                    <!-- /.box-tools -->
                   </div>
-                  <!-- /.box-tools -->
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  <canvas id="emailsandcallsByMonth"></canvas>
-                </div>
-                <!-- /.box-body -->
-            </div>
-		</div>
-		<div class="col-md-4">
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <canvas id="emailsandcallsByMonth"></canvas>
+                  </div>
+                  <!-- /.box-body -->
+              </div>
+  		</div>
+		  <div class="col-md-4">
 			<!-- Info Boxes Style 2 -->
         <div class="info-box bg-yellow">
           <span class="info-box-icon"><i class="ion ion-ios-email-outline"></i></span>
@@ -57,54 +57,54 @@ Your stats
         </div>
         <!-- /.info-box -->
     		  
-      <div class="info-box bg-red">
-        <span class="info-box-icon"><i class="ion ion-ios-cloud-upload-outline"></i></span>
-        <div class="info-box-content">
-          <span class="info-box-text">Development</span>
-          <span class="info-box-number">xxx hours</span>
+        <div class="info-box bg-red">
+          <span class="info-box-icon"><i class="ion ion-ios-cloud-upload-outline"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-text">Development</span>
+            <span class="info-box-number">xxx hours</span>
+          </div>
+          <!-- /.info-box-content -->
         </div>
-        <!-- /.info-box-content -->
-      </div>
       <!-- /.info-box -->
-		</div>
+		  </div>
 		
 	  </div>
     <div class="row">
-    <div class="col-md-4">
-      <div class="box box-warning">
-        <div class="box-header with-border">
-          <h3 class="box-title">Emails vs calls</h3>
+      <div class="col-md-4">
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Emails vs calls</h3>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+            <!-- /.box-tools -->
           </div>
-          <!-- /.box-tools -->
+          <!-- /.box-header -->
+          <div class="box-body">
+            <canvas id="emailsvscalls"></canvas>
+          </div>
+          <!-- /.box-body -->
         </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <canvas id="emailsvscalls"></canvas>
-        </div>
-        <!-- /.box-body -->
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="box box-warning">
-        <div class="box-header with-border">
-          <h3 class="box-title">Your emails to all emails</h3>
+      <div class="col-md-4">
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Your emails to all emails</h3>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+            <!-- /.box-tools -->
           </div>
-          <!-- /.box-tools -->
+          <!-- /.box-header -->
+          <div class="box-body">
+            <canvas id="emailsvsallemails"></canvas>
+          </div>
+          <!-- /.box-body -->
         </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <canvas id="emailsvsallemails"></canvas>
-        </div>
-        <!-- /.box-body -->
-      </div>
       </div>
       <div class="col-md-4">
         <div class="box box-warning">
@@ -124,6 +124,22 @@ Your stats
           <!-- /.box-body -->
         </div>
       </div>
+    </div>
+    <div class="row">
+      <!-- Miscellaneous stats going here -->
+      <div class="col-md-3">
+        //Best email month
+      </div>
+      <div class="col-md-3">
+        //Best email quarter
+      </div>
+      <div class="col-md-3">
+        //best call month
+      </div>
+      <div class="col-md-3">
+        //Best call quarter
+      </div>
+    </div>
 @endsection
 
 @section('page_scripts')
