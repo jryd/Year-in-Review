@@ -44,7 +44,7 @@ class FunFactsSeeder extends Seeder
 
         FunFacts::create([
             'title' => 'On the tip of your tongue',
-            'body' => "The word 'lethologica' describews the state of not being able to remember the word you want."
+            'body' => "The word 'lethologica' describes the state of not being able to remember the word you want."
         ]);
 
         FunFacts::create([
