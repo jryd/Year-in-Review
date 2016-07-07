@@ -3,14 +3,14 @@
 use Illuminate\Database\Seeder;
 use App\RawStats;
 
-class RawStatsSeeder extends Seeder
+/**class RawStatsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
+    /**public function run()
     {
         //Balthazar 5103703
         /*RawStats::create([
@@ -1529,7 +1529,8 @@ class RawStatsSeeder extends Seeder
             'quality_may' => 90.6,
             'quality_june' => xxx,
         	]);*/
-        	
+        
+        /**	
         //Alicia 5337563
         RawStats::create([
         	'user_id' => 28,
@@ -2321,5 +2322,5 @@ class RawStatsSeeder extends Seeder
             'quality_may' => 93.1,
             'quality_june' => xxx,
         	]);*/
-    }
-}
+    //}
+//}
