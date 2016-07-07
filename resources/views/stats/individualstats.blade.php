@@ -19,21 +19,20 @@ Your stats
 	  <div class="row">
   		<div class="col-md-8">
   			<div class="box box-warning">
-                  <div class="box-header with-border">
-                    <h3 class="box-title">Emails and Calls over the year</h3>
-          
-                    <div class="box-tools pull-right">
-                      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                      <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div>
-                    <!-- /.box-tools -->
-                  </div>
-                  <!-- /.box-header -->
-                  <div class="box-body">
-                    <canvas id="emailsandcallsByMonth"></canvas>
-                  </div>
-                  <!-- /.box-body -->
-              </div>
+          <div class="box-header with-border">
+            <h3 class="box-title">Emails and Calls over the year</h3>
+  
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div>
+            <!-- /.box-tools -->
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <canvas id="emailsandcallsByMonth"></canvas>
+          </div>
+          <!-- /.box-body -->
+        </div>
   		</div>
 		  <div class="col-md-4">
 			<!-- Info Boxes Style 2 -->
@@ -77,7 +76,6 @@ Your stats
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
             </div>
             <!-- /.box-tools -->
           </div>
@@ -95,7 +93,6 @@ Your stats
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
             </div>
             <!-- /.box-tools -->
           </div>
@@ -113,7 +110,6 @@ Your stats
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
             </div>
             <!-- /.box-tools -->
           </div>
@@ -126,18 +122,143 @@ Your stats
       </div>
     </div>
     <div class="row">
-      <!-- Miscellaneous stats going here -->
-      <div class="col-md-3">
-        //Best email month
+        <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Email Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_email_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
       </div>
       <div class="col-md-3">
-        //Best email quarter
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Email Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_email_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
       </div>
       <div class="col-md-3">
-        //best call month
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Call Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_call_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
       </div>
       <div class="col-md-3">
-        //Best call quarter
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Call Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_call_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Output Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_output_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Output Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_output_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Quality Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_quality_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Quality Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ Auth::user()->processedstats->best_quality_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
       </div>
     </div>
 @endsection

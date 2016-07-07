@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
         $this->call(RawStatsSeeder::class);
         $this->call(RoleTableSeeder::class);
         $this->call(CumulativeStatsSeeder::class);
+        $this->call(FunFactsSeeder::class);
     }
 }

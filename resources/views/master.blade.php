@@ -23,6 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         apply the skin class to the body tag so the changes take effect.
   -->
   <link rel="stylesheet" href="{{ asset('dist/css/skins/skin-yellow.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('custom/blockquote.css') }}">
   
   <!-- Token needed for any ajax calls -->
   <meta name="_token" content="{!! csrf_token() !!}"/>
@@ -188,6 +189,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </script>
 <!-- Active Link JS -->
 <script src="{{ asset('custom/activelink.js') }}"></script>
+<script src="{{ asset('js/konami.js') }}"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $('#sidebarButton').on('click', function() {

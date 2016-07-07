@@ -47,9 +47,4 @@ Route::post('/sidebar/changestate', function() {
 	}
 });
 
-Route::get('/test', function() {
-	$first_name = 'James';
-	$email = 'blah';
-	$password = 'lolcats';
-	return view('auth.emails.account', compact('first_name', 'email', 'password'));
-});
+Route::get('/funfacts', 'HomeController@funfacts');

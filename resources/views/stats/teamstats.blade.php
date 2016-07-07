@@ -24,7 +24,6 @@ Team Stats
         
                   <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                   </div>
                   <!-- /.box-tools -->
                 </div>
@@ -70,59 +69,195 @@ Team Stats
 		
 	  </div>
     <div class="row">
-    <div class="col-md-4">
-      <div class="box box-warning">
-        <div class="box-header with-border">
-          <h3 class="box-title">Team emails vs calls</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-          <!-- /.box-tools -->
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <canvas id="emailsvscalls"></canvas>
-        </div>
-        <!-- /.box-body -->
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="box box-warning">
-        <div class="box-header with-border">
-          <h3 class="box-title">Team emails vs all emails</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-          <!-- /.box-tools -->
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <canvas id="emailsvsallemails"></canvas>
-        </div>
-        <!-- /.box-body -->
-      </div>
-      </div>
       <div class="col-md-4">
         <div class="box box-warning">
           <div class="box-header with-border">
-            <h3 class="box-title">Team calls vs all calls</h3>
+            <h3 class="box-title">Team emails vs calls</h3>
 
             <div class="box-tools pull-right">
               <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
             </div>
             <!-- /.box-tools -->
           </div>
           <!-- /.box-header -->
           <div class="box-body">
-            <canvas id="callsvsallcalls"></canvas>
+            <canvas id="emailsvscalls"></canvas>
           </div>
           <!-- /.box-body -->
         </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Team emails vs all emails</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div>
+            <!-- /.box-tools -->
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <canvas id="emailsvsallemails"></canvas>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Team calls vs all calls</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <canvas id="callsvsallcalls"></canvas>
+            </div>
+            <!-- /.box-body -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Email Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_email_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Email Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_email_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Call Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_call_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Highest Call Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_call_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Output Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_output_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Output Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_output_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Quality Month</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_quality_month }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">Best Quality Quarter</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+              </div>
+              <!-- /.box-tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p>{{ $team->best_quality_quarter }}</p>
+            </div>
+            <!-- /.box-body -->
+          </div>
       </div>
 @endsection
 

@@ -40,4 +40,10 @@ class HomeController extends Controller
         Activity::log('Page View: Home');
         return view('home.home', compact('emails', 'cs_email_avg', 'emails_pp_avg', 'calls', 'calls_pp_avg', 'development', 'extra_tasks'));
     }
+
+    public function funfacts()
+    {
+        $fact = \App\FunFacts::all()->random();
+        return view('home.funfacts', compact('fact'));
+    }
 }
