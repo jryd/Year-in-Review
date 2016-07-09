@@ -17,7 +17,7 @@ class CheckIfManager
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->role_id == 9 || Auth::user()->role_id == 7)
+        if (Auth::user()->role_id > 4)
         {
             return $next($request);
         }

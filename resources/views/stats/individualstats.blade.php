@@ -55,15 +55,17 @@ Your stats
           <!-- /.info-box-content -->
         </div>
         <!-- /.info-box -->
-    		  
+    		
+        @if (Auth::user()->rawstats->development > 0)
         <div class="info-box bg-red">
           <span class="info-box-icon"><i class="ion ion-ios-cloud-upload-outline"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Development</span>
-            <span class="info-box-number">xxx hours</span>
+            <span class="info-box-number">{{ Auth::user()->rawstats->development }} hours</span>
           </div>
           <!-- /.info-box-content -->
         </div>
+        @endif
       <!-- /.info-box -->
 		  </div>
 		
@@ -271,12 +273,12 @@ Your stats
       {
         data: [{{ Auth::user()->processedstats->emails }}, {{ Auth::user()->processedstats->calls_total }}],
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB"
+          "#ffa500",
+          "#6495ed"
         ],
         hoverBackgroundColor: [
-          "#ff7290",
-          "#4aabed"
+          "#ffae19",
+          "#739fee"
         ]
       }
     ]
@@ -288,12 +290,12 @@ Your stats
       {
         data: [{{ Auth::user()->processedstats->emails }}, {{ $cumulativestats->emails }}],
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB"
+          "#ffa500",
+          "#6495ed"
         ],
         hoverBackgroundColor: [
-          "#ff7290",
-          "#4aabed"
+          "#ffae19",
+          "#739fee"
         ]
       }
     ]
@@ -305,12 +307,12 @@ Your stats
       {
         data: [{{ Auth::user()->processedstats->calls_inbound }}, {{ $cumulativestats->calls }}],
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB"
+          "#ffa500",
+          "#6495ed"
         ],
         hoverBackgroundColor: [
-          "#ff7290",
-          "#4aabed"
+          "#ffae19",
+          "#739fee"
         ]
       }
     ]

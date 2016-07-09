@@ -99,6 +99,7 @@ class CreateTeamStatsTable extends Migration
             $table->string('best_output_quarter');
             $table->string('best_quality_month');
             $table->string('best_quality_quarter');
+            $table->decimal('development', 11, 2);
             $table->timestamps();
         });
     }

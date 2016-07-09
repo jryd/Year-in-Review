@@ -114,6 +114,7 @@ class ProcessTeamStats extends Command
         $quality_april = null;
         $quality_may = null;
         $quality_june = null;
+        $development = null;
 
         //Day Crew
         $daycrewteamstats = RawStats::where('role_id', '=', 1)->get();
@@ -191,6 +192,7 @@ class ProcessTeamStats extends Command
             $quality_april += $team_stats->quality_april;
             $quality_may += $team_stats->quality_may;
             $quality_june += $team_stats->quality_june;
+            $development += $team_stats->development;
         }
         $daycrewteamstats = new TeamStats;
         //save all entries
@@ -267,6 +269,7 @@ class ProcessTeamStats extends Command
         $daycrewteamstats->quality_april = $quality_april;
         $daycrewteamstats->quality_may = $quality_may;
         $daycrewteamstats->quality_june = $quality_june;
+        $daycrewteamstats->development = $development;
         $daycrewteamstats->save();
         $bar->advance();
 
@@ -343,6 +346,7 @@ class ProcessTeamStats extends Command
         $quality_april = null;
         $quality_may = null;
         $quality_june = null;
+        $development = null;
 
         //Evening Crew One
         $eveningcrewoneteamstatsteamstats = RawStats::where('role_id', '=', 2)->get();
@@ -420,6 +424,7 @@ class ProcessTeamStats extends Command
             $quality_april += $team_stats->quality_april;
             $quality_may += $team_stats->quality_may;
             $quality_june += $team_stats->quality_june;
+            $development += $team_stats->development;
         }
         $eveningcrewoneteamstats = new TeamStats;
         //save all entries
@@ -496,6 +501,7 @@ class ProcessTeamStats extends Command
         $eveningcrewoneteamstats->quality_april = $quality_april;
         $eveningcrewoneteamstats->quality_may = $quality_may;
         $eveningcrewoneteamstats->quality_june = $quality_june;
+        $eveningcrewoneteamstats->development = $development;
         $eveningcrewoneteamstats->save();
         $bar->advance();
 
@@ -572,6 +578,7 @@ class ProcessTeamStats extends Command
         $quality_april = null;
         $quality_may = null;
         $quality_june = null;
+        $development = null;
 
         //Evening Crew Two
         $eveningcrewtwoteamstats = RawStats::where('role_id', '=', 3)->get();
@@ -649,6 +656,7 @@ class ProcessTeamStats extends Command
             $quality_april += $team_stats->quality_april;
             $quality_may += $team_stats->quality_may;
             $quality_june += $team_stats->quality_june;
+            $development += $team_stats->development;
         }
         $eveningcrewtwoteamstats = new TeamStats;
         //save all entries
@@ -725,6 +733,7 @@ class ProcessTeamStats extends Command
         $eveningcrewtwoteamstats->quality_april = $quality_april;
         $eveningcrewtwoteamstats->quality_may = $quality_may;
         $eveningcrewtwoteamstats->quality_june = $quality_june;
+        $eveningcrewtwoteamstats->development = $development;
         $eveningcrewtwoteamstats->save();
         $bar->advance();
 
@@ -801,6 +810,7 @@ class ProcessTeamStats extends Command
         $quality_april = null;
         $quality_may = null;
         $quality_june = null;
+        $development = null;
 
         //Nightwalkers
         $nightwalkerteamstats = RawStats::where('role_id', '=', 4)->get();
@@ -878,6 +888,7 @@ class ProcessTeamStats extends Command
             $quality_april += $team_stats->quality_april;
             $quality_may += $team_stats->quality_may;
             $quality_june += $team_stats->quality_june;
+            $development += $team_stats->development;
         }
         $nightwalkerteamstats = new TeamStats;
         //save all entries
@@ -954,6 +965,7 @@ class ProcessTeamStats extends Command
         $nightwalkerteamstats->quality_april = $quality_april;
         $nightwalkerteamstats->quality_may = $quality_may;
         $nightwalkerteamstats->quality_june = $quality_june;
+        $nightwalkerteamstats->development = $development;
         $nightwalkerteamstats->save();
         $bar->advance();
 

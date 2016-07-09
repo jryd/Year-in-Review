@@ -76,6 +76,7 @@ class CreateRawStatsTable extends Migration
             $table->decimal('quality_april', 11, 2);
             $table->decimal('quality_may', 11, 2);
             $table->decimal('quality_june', 11, 2);
+            $table->decimal('development', 11, 2);
             $table->timestamps();
         });
     }

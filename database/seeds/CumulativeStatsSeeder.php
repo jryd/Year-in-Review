@@ -14,8 +14,8 @@ class CumulativeStatsSeeder extends Seeder
         \App\CumulativeStats::create([
             'emails' => 100000,
             'calls' => 25000,
-            'development' => 2500,
-            'extra_tasks' => 4160,
+            'development' => 693.65,
+            'extra_tasks' => 3701,
             'cs_email_average' => 87.41,
             'email_per_person_average' => 2500,
             'call_per_person_average' => 750,

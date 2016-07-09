@@ -115,10 +115,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
         @if (Auth::user()->role_id == 1 || Auth::user()->role_id == 2 || Auth::user()->role_id == 3 || Auth::user()->role_id == 4)
           <li class="mystats"><a href="{{ url('/mystats') }}"><i class="fa fa-line-chart"></i> <span>My Stats</span></a></li>
         @endif
-        @if (Auth::user()->role_id != 9 || Auth::user()->role_id != 9 || 10)
+        @if (Auth::user()->role_id != 9 || Auth::user()->role_id != 10)
           <li class="teamstats"><a href="{{ url('/teamstats') }}"><i class="fa fa-users"></i> <span>Team Stats</span></a></li>
         @endif
-        @if (Auth::user()->role_id > 8 || Auth::user()->role_id == 7)
+        @if (Auth::user()->role_id > 4)
           <li class="allteamstats"><a href="{{ url('/allteamstats') }}"><i class="fa fa-users"></i> <span>All Team Stats</span></a></li>
         @endif
         @if (Auth::user()->role_id == 10 || Auth::user()->role_id == 7)

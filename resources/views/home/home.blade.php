@@ -39,7 +39,7 @@ Home
 						<h3 class="timeline-header">Emails</h3>
 
 						<div class="timeline-body">
-							Over the course of the last year, we have received <b>{{ number_format($emails) }}</b> emails - of which <b>{{ $cs_email_avg }}%</b> were personally dealt with by us here in Core CS.
+							Over the course of the last year, we have received <b>{{ number_format($emails) }}</b> emails - of which <b title="The number of emails we received that were answered by the admin number of anyone here after the 1st of May." data-toggle="tooltip">{{ $cs_email_avg }}%</b> were personally dealt with by us here in Core CS.
 							<br/><br/>
 							With each person answering <b>{{ number_format($emails_pp_avg) }}</b> on average.
 						</div>
@@ -77,7 +77,7 @@ Home
 						<div class="timeline-body">
 							Hiring and growing great people is part of what we do here at Trade Me.
 							<br/><br/>
-							Over the last year we have spent a total of <b>{{ number_format($development + $extra_tasks) }}</b> hours supporting your development (WIPs, training, courses etc) and extra tasks (TMCS, Call Backs, STA etc).
+							Over the last year we have spent a total of <b>{{ number_format($extra_tasks) }}</b> hours supporting your development (WIPs, training, courses etc) and extra tasks (TMCS, Call Backs, STA etc).
 						</div>
 
 					</div>

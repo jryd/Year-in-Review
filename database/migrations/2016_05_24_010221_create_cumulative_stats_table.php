@@ -16,7 +16,7 @@ class CreateCumulativeStatsTable extends Migration
             $table->increments('id');
             $table->integer('emails');
             $table->integer('calls');
-            $table->integer('development');
+            $table->decimal('development', 11, 2);
             $table->integer('extra_tasks');
             $table->decimal('cs_email_average', 11, 2);
             $table->integer('email_per_person_average');

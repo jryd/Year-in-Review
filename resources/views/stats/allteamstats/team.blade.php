@@ -62,7 +62,7 @@
         <span class="info-box-icon"><i class="ion ion-ios-cloud-upload-outline"></i></span>
         <div class="info-box-content">
           <span class="info-box-text">Development</span>
-          <span class="info-box-number">xxx hours</span>
+          <span class="info-box-number">{{ $team->development }} hours</span>
         </div>
         <!-- /.info-box-content -->
       </div>
@@ -272,12 +272,12 @@
       {
         data: [{{ $team->emails }}, {{ $team->calls_inbound + $team->calls_outbound }}],
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB"
+          "#ffa500",
+          "#6495ed"
         ],
         hoverBackgroundColor: [
-          "#ff7290",
-          "#4aabed"
+          "#ffae19",
+          "#739fee"
         ]
       }
     ]
@@ -289,12 +289,12 @@
       {
         data: [{{ $team->emails }}, {{ $cumulative->emails }}],
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB"
+          "#ffa500",
+          "#6495ed"
         ],
         hoverBackgroundColor: [
-          "#ff7290",
-          "#4aabed"
+          "#ffae19",
+          "#739fee"
         ]
       }
     ]
@@ -306,12 +306,12 @@
       {
         data: [{{ $team->calls_inbound + $team->calls_outbound }}, {{ $cumulative->calls }}],
         backgroundColor: [
-          "#FF6384",
-          "#36A2EB"
+          "#ffa500",
+          "#6495ed"
         ],
         hoverBackgroundColor: [
-          "#ff7290",
-          "#4aabed"
+          "#ffae19",
+          "#739fee"
         ]
       }
     ]
