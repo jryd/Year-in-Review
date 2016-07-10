@@ -12,12 +12,12 @@ class CumulativeStatsSeeder extends Seeder
     public function run()
     {
         \App\CumulativeStats::create([
-            'emails' => 100000,
+            'emails' => 521970,
             'calls' => 25000,
             'development' => 693.65,
             'extra_tasks' => 3701,
-            'cs_email_average' => 87.41,
-            'email_per_person_average' => 2500,
+            'cs_email_average' => 77.31,
+            'email_per_person_average' => 11529,
             'call_per_person_average' => 750,
         ]);
     }
