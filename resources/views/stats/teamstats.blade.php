@@ -190,6 +190,7 @@ Team Stats
             <!-- /.box-body -->
           </div>
       </div>
+      </div>
       <div class="row">
         <div class="col-md-3">
           <div class="box box-warning">
@@ -258,6 +259,7 @@ Team Stats
             </div>
             <!-- /.box-body -->
           </div>
+      </div>
       </div>
 @endsection
 
