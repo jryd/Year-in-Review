@@ -94,7 +94,7 @@ class UsersSeeder extends Seeder
         User::create([
         	'first_name' => 'Ella',
         	'last_name' => 'Hard',
-        	'email' => 'ella.hard@trademe.co.nz',
+        	'email' => 'ella.hard@xero.com',
         	'password' => Hash::make('reverent_poincare'),
             'seed_password' => 'reverent_poincare',
             'password_is_admin_set' => 1,
