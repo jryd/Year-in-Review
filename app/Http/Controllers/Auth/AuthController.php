@@ -74,11 +74,11 @@ class AuthController extends Controller
 
     public function showRegistrationForm()
     {
-        return redirect('/auth/login');
+        return redirect('/login');
     }
 
     public function register()
     {
-        return redirect('auth/login');
+        return redirect('/login');
     }
 }
