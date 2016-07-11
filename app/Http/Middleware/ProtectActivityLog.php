@@ -18,7 +18,7 @@ class ProtectActivityLog
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->role_id == 10 || Auth::user()->id == 4)
+        if (Auth::user()->role_id == 10 || Auth::user()->role_id == 7)
         {
             return $next($request);
         }

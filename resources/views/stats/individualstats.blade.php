@@ -263,6 +263,42 @@ Your stats
           </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Output over the year</h3>
+  
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div>
+            <!-- /.box-tools -->
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <canvas id="outputByMonth"></canvas>
+          </div>
+          <!-- /.box-body -->
+        </div> 
+      </div>
+      <div class="col-md-6">
+        <div class="box box-warning">
+          <div class="box-header with-border">
+            <h3 class="box-title">Quality over the year</h3>
+  
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            </div>
+            <!-- /.box-tools -->
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <canvas id="qualityByMonth"></canvas>
+          </div>
+          <!-- /.box-body -->
+        </div>
+      </div>
+    </div>
 @endsection
 
 @section('page_scripts')
@@ -327,7 +363,7 @@ Your stats
                 borderColor : '#da8c10',
                 pointBackgroundColor : '#F39C12',
                 pointBorderColor : '#da8c10',
-              data: [{{ Auth::user()->rawstats->emails_july }}, {{ Auth::user()->rawstats->emails_august }}, {{ Auth::user()->rawstats->emails_september }}, {{ Auth::user()->rawstats->emails_october }}, {{ Auth::user()->rawstats->emails_november }}, {{ Auth::user()->rawstats->emails_december }}, {{ Auth::user()->rawstats->emails_january }}, {{ Auth::user()->rawstats->emails_february }}, {{ Auth::user()->rawstats->emails_march }}, {{ Auth::user()->rawstats->emails_april }}, 600, 600]
+              data: [{{ Auth::user()->rawstats->emails_july }}, {{ Auth::user()->rawstats->emails_august }}, {{ Auth::user()->rawstats->emails_september }}, {{ Auth::user()->rawstats->emails_october }}, {{ Auth::user()->rawstats->emails_november }}, {{ Auth::user()->rawstats->emails_december }}, {{ Auth::user()->rawstats->emails_january }}, {{ Auth::user()->rawstats->emails_february }}, {{ Auth::user()->rawstats->emails_march }}, {{ Auth::user()->rawstats->emails_april }}, {{ Auth::user()->rawstats->emails_may }}, {{ Auth::user()->rawstats->emails_june }}]
           },
           {
               label: 'Calls',
@@ -335,15 +371,46 @@ Your stats
                 borderColor : '#008548',
                 pointBackgroundColor : '#00A65A',
                 pointBorderColor : '#008548',
-              data: [{{ Auth::user()->rawstats->calls_inbound_july }}, {{ Auth::user()->rawstats->calls_inbound_august }}, {{ Auth::user()->rawstats->calls_inbound_september }}, {{ Auth::user()->rawstats->calls_inbound_october }}, {{ Auth::user()->rawstats->calls_inbound_november }}, {{ Auth::user()->rawstats->calls_inbound_december }}, {{ Auth::user()->rawstats->calls_inbound_january }}, {{ Auth::user()->rawstats->calls_inbound_february }}, {{ Auth::user()->rawstats->calls_inbound_march }}, {{ Auth::user()->rawstats->calls_inbound_april }}, 170, 170]
+              data: [{{ Auth::user()->rawstats->calls_inbound_july }}, {{ Auth::user()->rawstats->calls_inbound_august }}, {{ Auth::user()->rawstats->calls_inbound_september }}, {{ Auth::user()->rawstats->calls_inbound_october }}, {{ Auth::user()->rawstats->calls_inbound_november }}, {{ Auth::user()->rawstats->calls_inbound_december }}, {{ Auth::user()->rawstats->calls_inbound_january }}, {{ Auth::user()->rawstats->calls_inbound_february }}, {{ Auth::user()->rawstats->calls_inbound_march }}, {{ Auth::user()->rawstats->calls_inbound_april }},{{ Auth::user()->rawstats->calls_inbound_may }}, {{ Auth::user()->rawstats->calls_inbound_june }}]
           }
       ]
+  };
+
+
+  var outputByMonthData = {
+    labels: ['July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June'],
+    datasets: [
+          {
+              label: 'Output',
+              backgroundColor : 'rgba(255, 174, 25, 0.3)',
+                borderColor : '#ffa500',
+                pointBackgroundColor : '#ffae19',
+                pointBorderColor : '#ffa500',
+              data: [{{ Auth::user()->rawstats->output_july }}, {{ Auth::user()->rawstats->output_august }}, {{ Auth::user()->rawstats->output_september }}, {{ Auth::user()->rawstats->output_october }}, {{ Auth::user()->rawstats->output_november }}, {{ Auth::user()->rawstats->output_december }}, {{ Auth::user()->rawstats->output_january }}, {{ Auth::user()->rawstats->output_february }}, {{ Auth::user()->rawstats->output_march }}, {{ Auth::user()->rawstats->output_april }}, {{ Auth::user()->rawstats->output_may }}, {{ Auth::user()->rawstats->output_june }}]
+          }
+    ]
+  };
+
+  var qualityByMonthData = {
+    labels: ['July', 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June'],
+    datasets: [
+          {
+              label: 'Quality',
+              backgroundColor : 'rgba(115, 159, 238, 0.3)',
+                borderColor : '#6495ed',
+                pointBackgroundColor : '#739fee',
+                pointBorderColor : '#6495ed',
+              data: [{{ Auth::user()->rawstats->quality_july }}, {{ Auth::user()->rawstats->quality_august }}, {{ Auth::user()->rawstats->quality_september }}, {{ Auth::user()->rawstats->quality_october }}, {{ Auth::user()->rawstats->quality_november }}, {{ Auth::user()->rawstats->quality_december }}, {{ Auth::user()->rawstats->quality_january }}, {{ Auth::user()->rawstats->quality_february }}, {{ Auth::user()->rawstats->quality_march }}, {{ Auth::user()->rawstats->quality_april }}, {{ Auth::user()->rawstats->quality_may }}, {{ Auth::user()->rawstats->quality_june }}]
+          }
+    ]
   };
 
   var emailsvscalls = document.querySelector('#emailsvscalls').getContext('2d');
   var emailsvsallemails = document.querySelector('#emailsvsallemails').getContext('2d');
   var callsvsallcalls = document.querySelector('#callsvsallcalls').getContext('2d');
   var emailsandcallsByMonth = document.querySelector('#emailsandcallsByMonth').getContext('2d');
+  var outputByMonth = document.querySelector('#outputByMonth').getContext('2d');
+  var qualityByMonth = document.querySelector('#qualityByMonth').getContext('2d');
 
   new Chart(emailsvscalls, {
     type: 'doughnut',
@@ -363,6 +430,16 @@ Your stats
   new Chart(emailsandcallsByMonth, {
       type: 'line',
       data: emailsandcallsByMonthData,
+  });
+
+  new Chart(outputByMonth, {
+      type: 'line',
+      data: outputByMonthData,
+  });
+
+  new Chart(qualityByMonth, {
+      type: 'line',
+      data: qualityByMonthData,
   });
 
 </script>

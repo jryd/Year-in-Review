@@ -1,0 +1,73 @@
+.fourohfour-title h1 {
+    color: #7F7F7F;
+    cursor: default;
+    display: block;
+    font-size: 250px;
+  text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fourohfour-title h1:before {
+    color: #8C8C8C;
+    content: "{";
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.fourohfour-title h1:after {
+    color: #f39c12;
+    content: "}";
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.fourohfour-title h2 {
+    color: #7F7F7F;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  text-align: center;
+}
+
+.fivehundy-title h1 {
+    color: #7F7F7F;
+    cursor: default;
+    display: block;
+    font-size: 250px;
+  text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.fivehundy-title h1:before {
+    color: #8C8C8C;
+    content: "{";
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.fivehundy-title h1:after {
+    color: #dd4b39;
+    content: "}";
+    font-family: 'BebasNeueRegular','Arial','Helvetica',sans-serif;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.fivehundy-title h2 {
+    color: #7F7F7F;
+    font-size: 27px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  text-align: center;
+}
