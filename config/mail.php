@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => null, 'name' => null],
+    'from' => ['address' => 'mailer@bannister.me', 'name' => 'Mail Robot'],
 
     /*
     |--------------------------------------------------------------------------
