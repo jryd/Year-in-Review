@@ -321,7 +321,7 @@
   };
 
   var emailsvsallemailsData = {
-    labels: ['Your Emails', 'All Emails'],
+    labels: ['Their Emails', 'All Emails'],
     datasets: [
       {
         data: [{{ $user->processedstats->emails }}, {{ $cumulative->emails }}],
@@ -338,7 +338,7 @@
   };
 
   var callsvsallcallsData = {
-    labels: ['Your Calls', 'All Calls'],
+    labels: ['Their Calls', 'All Calls'],
     datasets: [
       {
         data: [{{ $user->processedstats->calls_inbound }}, {{ $cumulative->calls }}],
