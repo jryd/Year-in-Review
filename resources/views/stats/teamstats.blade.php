@@ -283,7 +283,7 @@ Team Stats
   };
 
   var emailsvsallemailsData = {
-    labels: ['Your Emails', 'All Emails'],
+    labels: ['Team Emails', 'All Emails'],
     datasets: [
       {
         data: [{{ $team->emails }}, {{ $cumulative->emails }}],
@@ -300,7 +300,7 @@ Team Stats
   };
 
   var callsvsallcallsData = {
-    labels: ['Your Calls', 'All Calls'],
+    labels: ['Team Calls', 'All Calls'],
     datasets: [
       {
         data: [{{ $team->calls_inbound + $team->calls_outbound }}, {{ $cumulative->calls }}],
