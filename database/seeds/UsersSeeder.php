@@ -72,7 +72,7 @@ class UsersSeeder extends Seeder
         User::create([
         	'first_name' => 'Hannah',
         	'last_name' => 'Buchanan',
-        	'email' => 'hannah.buchanan@trademe.co.nz',
+        	'email' => 'hannahmarybuchanan@gmail.com',
         	'password' => Hash::make('goofy_blackwell'),
             'seed_password' => 'goofy_blackwell',
             'password_is_admin_set' => 1,
@@ -127,7 +127,7 @@ class UsersSeeder extends Seeder
         User::create([
         	'first_name' => 'Abe',
         	'last_name' => 'Foster',
-        	'email' => 'abraham.foster@trademe.co.nz',
+        	'email' => 'foster.abe24@gmail.com',
         	'password' => Hash::make('cranky_darwin'),
             'seed_password' => 'cranky_darwin',
             'password_is_admin_set' => 1,
