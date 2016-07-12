@@ -43,7 +43,7 @@
                   <td style="padding: 10px 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
                     <p>If you have any questions or trouble, then come and have a chat with me, otherwise get stuck in!</p>
                     <p>Cheers,</p>
-                    <p>James and the TL team</p>
+                    <p>James</p>
                   </td>
                 </tr>
                 <tr>
