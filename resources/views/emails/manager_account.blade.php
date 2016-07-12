@@ -31,12 +31,12 @@
                 </tr>
                 <tr>
                   <td style="padding: 10px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
-                    We are the eyes, ears and voice of this company, interacting with thousands of our members every week and we've accomplished a lot over the last year. I'd love to share it all with you and show you how each of your team members played their part.
+                    Here in CS, we are the eyes, ears and voice of this company, interacting with thousands of our members every week and we've accomplished a lot over the last year. I'd love to share it all with you and show you how each of your team members played their part.
                   </td>
                 </tr>
                 <tr>
                   <td style="padding: 10px 0 10px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
-                    It's really easy to get started, just jump over the site, <a href="{{ url('/') }}">Year in Review</a>, and log in. You use your email address, {{ $email }}, and the temporary password, <b>{{ $password }}</b>, to log in for the first time.
+                    It's really easy to get started, just jump over to the site, <a href="{{ url('/') }}">Year in Review</a>, and log in. You use your email address, {{ $email }}, and the temporary password, <b>{{ $password }}</b>, to log in for the first time.
                   </td>
                 </tr>
                 <tr>
