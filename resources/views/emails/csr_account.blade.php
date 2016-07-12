@@ -54,6 +54,7 @@
                 <tr>
                   <td style="padding: 10px 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 8px; line-height: 20px;">
                     <p>What would a good website be without 'funfacts'...</p>
+                    <p>Do not reply to this email - I won't receive it.</p>
                   </td>
                 </tr>
               </table>
