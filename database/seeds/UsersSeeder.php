@@ -338,7 +338,7 @@ class UsersSeeder extends Seeder
         User::create([
         	'first_name' => 'Toby',
         	'last_name' => 'Wray',
-        	'email' => 'toby.wray@trademe.co.nz',
+        	'email' => 'toby@trademe.co.nz',
         	'password' => Hash::make('adoring_booth'),
             'seed_password' => 'adoring_booth',
             'password_is_admin_set' => 1,
