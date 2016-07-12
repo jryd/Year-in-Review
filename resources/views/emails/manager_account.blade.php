@@ -40,10 +40,20 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding: 10px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                  <td style="padding: 10px 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
                     <p>If you have any questions or trouble, then come and have a chat with me, otherwise get stuck in!</p>
                     <p>Cheers,</p>
                     <p>James and the TL team</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 10px 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
+                    <hr>
+                  </td>
+                </tr>
+				<tr>
+                  <td style="padding: 10px 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 8px; line-height: 20px;">
+                    <p>What would a good web application be without 'fun facts'...</p>
                   </td>
                 </tr>
               </table>
